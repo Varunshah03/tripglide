@@ -10,6 +10,8 @@ import os
 from datetime import datetime
 from dotenv import load_dotenv
 
+load_dotenv()
+
 app = Flask(__name__)
 CORS(app, origins=["http://localhost:5173"])  # Match frontend port
 
@@ -143,7 +145,6 @@ def index():
     return jsonify({"success": True, "message": "TripGlide API running"}), 200
 
 # Load Twilio credentials
-load_dotenv()
 TWILIO_ACCOUNT_SID = os.getenv('TWILIO_ACCOUNT_SID')
 TWILIO_AUTH_TOKEN = os.getenv('TWILIO_AUTH_TOKEN')
 TWILIO_VERIFY_SERVICE_SID = os.getenv('TWILIO_VERIFY_SERVICE_SID')

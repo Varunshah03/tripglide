@@ -14,7 +14,7 @@ import Footer from "./Footer";
 
 // Load Stripe with your public key
 const stripePromise = loadStripe(
-  "pk_test_51R9gCp2RiOcrGJvieLzKDxaRl6BUuUMsLgqRw9JtzVE7ODz7SJSy7NPqSfTySDpE42Z66YlDFTHSTqZakuWN58u200VoXJx5zQ"
+  "pk_test_51R9No7RtOB964nOwbCnB8DQSDfS5G66dozt3WRe0mwu3E5hwlxsObPZHYORqKrmWuVVhpn8EYUsWi075a1WYCshV00IbVFQLYi"
 );
 
 const SwiperPopularCarDeals = () => {

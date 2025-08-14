@@ -2,7 +2,7 @@
 echo Starting all backend and frontend processes...
 
 :: Start flight.py
-start cmd /k "cd C:\xampp\htdocs\Internship\tripglide\backend && python flight.py"
+start cmd /k "cd C:\xampp\htdocs\Internship\tripglide\backend\flight && python flight.py"
 
 :: Start server.js
 start cmd /k "cd C:\xampp\htdocs\Internship\tripglide\backend && node server.js"

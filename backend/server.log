@@ -3920,3 +3920,1577 @@ TypeError: The view function for 'login' did not return a valid response. The fu
 2025-04-27 16:11:14,961 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 66.30ms
 2025-04-27 16:11:14,969 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
 2025-04-27 16:11:14,971 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 7.28ms
+2025-04-27 17:33:12,574 - DEBUG - Starting authorization phase
+2025-04-27 17:33:12,574 - DEBUG - The provided initial strategy is mysql_native_password
+2025-04-27 17:33:12,574 - INFO - package: mysql.connector.plugins
+2025-04-27 17:33:12,574 - INFO - plugin_name: mysql_native_password
+2025-04-27 17:33:12,574 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-27 17:33:12,574 - DEBUG - mysql_native_password completed succesfully
+2025-04-27 17:33:12,574 - INFO - Database connection established
+2025-04-27 17:33:12,593 - INFO - Database tables initialized
+2025-04-27 17:33:12,595 - INFO - Twilio client initialized successfully
+2025-04-27 17:33:12,598 - INFO - Serving on http://0.0.0.0:5001
+2025-04-27 17:33:12,598 - DEBUG - Using selector: SelectSelector
+2025-04-27 17:33:12,603 - INFO - Start watching changes
+2025-04-27 17:33:12,603 - INFO - Start detecting changes
+2025-04-27 17:34:44,450 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-04-27 17:34:44,457 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 22.08ms
+2025-04-27 17:34:44,472 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-04-27 17:34:44,475 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 12.00ms
+2025-04-27 17:41:48,088 - DEBUG - Starting authorization phase
+2025-04-27 17:41:48,088 - DEBUG - The provided initial strategy is mysql_native_password
+2025-04-27 17:41:48,088 - INFO - package: mysql.connector.plugins
+2025-04-27 17:41:48,088 - INFO - plugin_name: mysql_native_password
+2025-04-27 17:41:48,088 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-27 17:41:48,088 - DEBUG - mysql_native_password completed succesfully
+2025-04-27 17:41:48,088 - INFO - Database connection established
+2025-04-27 17:41:48,088 - INFO - Database tables initialized
+2025-04-27 17:41:48,088 - INFO - Twilio client initialized successfully
+2025-04-27 17:41:48,088 - INFO - Serving on http://0.0.0.0:5001
+2025-04-27 17:41:48,088 - DEBUG - Using selector: SelectSelector
+2025-04-27 17:41:48,105 - INFO - Start watching changes
+2025-04-27 17:41:48,105 - INFO - Start detecting changes
+2025-04-27 17:42:30,765 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-04-27 17:42:30,771 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 16.75ms
+2025-04-27 17:42:30,784 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-04-27 17:42:30,788 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 10.53ms
+2025-04-27 17:42:55,739 - INFO - 200 OPTIONS /api/login (127.0.0.1) 2.00ms
+2025-04-27 17:42:55,743 - DEBUG - Login attempt: identifier=8799188207
+2025-04-27 17:42:55,745 - DEBUG - Query: SELECT * FROM users WHERE phone = %s AND password = %s, Result: {'user_id': 27, 'username': 'varun.in', 'email': 'quizzicalbassi1@freethecookies.com', 'password': '123456', 'birthday': datetime.date(2019, 1, 1), 'gender': 'MALE', 'phone': '8799188207', 'address': 'paris', 'state': 'Gujarat', 'pincode': '391740', 'otp': None, 'otp_verified': 1}
+2025-04-27 17:42:55,948 - INFO - -- BEGIN Twilio API Request --
+2025-04-27 17:42:55,949 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/Verifications
+2025-04-27 17:42:55,949 - INFO - Headers:
+2025-04-27 17:42:55,949 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-04-27 17:42:55,949 - INFO - Accept : application/json
+2025-04-27 17:42:55,949 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-04-27 17:42:55,949 - INFO - X-Twilio-Client : python-9.5.2
+2025-04-27 17:42:55,949 - INFO - Accept-Charset : utf-8
+2025-04-27 17:42:55,950 - INFO - -- END Twilio API Request --
+2025-04-27 17:42:55,952 - DEBUG - Starting new HTTPS connection (1): verify.twilio.com:443
+2025-04-27 17:42:56,483 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/Verifications HTTP/1.1" 201 634
+2025-04-27 17:42:56,484 - INFO - Response Status Code: 201
+2025-04-27 17:42:56,484 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '634', 'Connection': 'keep-alive', 'Date': 'Sun, 27 Apr 2025 12:12:56 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQa4ef2349bd8fb2cbf1103b74cac87b3b', 'Twilio-Request-Duration': '0.183', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 5ecd55f028d3424418cf823c48f98656.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': 'nSNh46Ajqp_uLTRtspge9CUXxyShaZBsEg2K5R-5tP2bOlacLYCsaA=='}
+2025-04-27 17:42:56,489 - INFO - Verification sent to 8799188207 via sms: VE4596f1f321c3b48d76e7b3baa5deba8b
+2025-04-27 17:42:56,490 - INFO - -- BEGIN Twilio API Request --
+2025-04-27 17:42:56,490 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/Verifications
+2025-04-27 17:42:56,490 - INFO - Headers:
+2025-04-27 17:42:56,490 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-04-27 17:42:56,490 - INFO - Accept : application/json
+2025-04-27 17:42:56,490 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-04-27 17:42:56,490 - INFO - X-Twilio-Client : python-9.5.2
+2025-04-27 17:42:56,490 - INFO - Accept-Charset : utf-8
+2025-04-27 17:42:56,490 - INFO - -- END Twilio API Request --
+2025-04-27 17:42:57,260 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/Verifications HTTP/1.1" 201 699
+2025-04-27 17:42:57,261 - INFO - Response Status Code: 201
+2025-04-27 17:42:57,261 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '699', 'Connection': 'keep-alive', 'Date': 'Sun, 27 Apr 2025 12:12:57 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ9d2f3cedc91664f1ba2acc5a3bb46c61', 'Twilio-Request-Duration': '0.169', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 5ecd55f028d3424418cf823c48f98656.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': 'BG8ZqeA2JCNpDDTQGBsFD1PY7-hxQHBsIiMhQx_B-XWf-40YJfyV2Q=='}
+2025-04-27 17:42:57,261 - INFO - Verification sent to quizzicalbassi1@freethecookies.com via email: VE7d13945d85b856c0136f320fc52cefee
+2025-04-27 17:42:57,261 - INFO - Login pending OTP: phone=8799188207, sent to [{'identifier': '8799188207', 'type': 'sms'}, {'identifier': 'quizzicalbassi1@freethecookies.com', 'type': 'email'}]
+2025-04-27 17:42:57,264 - INFO - 200 POST /api/login (127.0.0.1) 1520.97ms
+2025-04-27 17:43:17,736 - INFO - 200 OPTIONS /api/verify_code (127.0.0.1) 1.17ms
+2025-04-27 17:43:17,741 - INFO - -- BEGIN Twilio API Request --
+2025-04-27 17:43:17,741 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/VerificationCheck
+2025-04-27 17:43:17,741 - INFO - Headers:
+2025-04-27 17:43:17,741 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-04-27 17:43:17,742 - INFO - Accept : application/json
+2025-04-27 17:43:17,742 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-04-27 17:43:17,742 - INFO - X-Twilio-Client : python-9.5.2
+2025-04-27 17:43:17,742 - INFO - Accept-Charset : utf-8
+2025-04-27 17:43:17,742 - INFO - -- END Twilio API Request --
+2025-04-27 17:43:18,157 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/VerificationCheck HTTP/1.1" 200 340
+2025-04-27 17:43:18,158 - INFO - Response Status Code: 200
+2025-04-27 17:43:18,159 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '340', 'Connection': 'keep-alive', 'Date': 'Sun, 27 Apr 2025 12:13:18 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ1512f5f67dd723d8621d9a2549f0e6a2', 'Twilio-Request-Duration': '0.034', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 5ecd55f028d3424418cf823c48f98656.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': 'N0iyt20tvf9wvvgyi1VTV3dYKN5oIN2amTgnUbhoVLUFujvNNP56JA=='}
+2025-04-27 17:43:18,159 - INFO - Verification check for 8799188207: approved
+2025-04-27 17:43:18,167 - INFO - phone verified for 8799188207
+2025-04-27 17:43:18,168 - INFO - 200 POST /api/verify_code (127.0.0.1) 428.67ms
+2025-04-27 17:43:18,295 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-04-27 17:43:18,296 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 5.13ms
+2025-04-27 17:43:18,301 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-04-27 17:43:18,303 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 4.53ms
+2025-04-27 17:44:33,200 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-04-27 17:44:33,202 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 4.01ms
+2025-04-27 17:44:33,205 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-04-27 17:44:33,206 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 3.00ms
+2025-04-27 17:47:32,287 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-04-27 17:47:32,288 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 6.21ms
+2025-04-27 17:47:32,297 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-04-27 17:47:32,299 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 6.24ms
+2025-04-27 17:48:32,717 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-04-27 17:48:32,718 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 3.19ms
+2025-04-27 17:48:32,724 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-04-27 17:48:32,725 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 4.41ms
+2025-04-28 15:18:25,736 - DEBUG - Starting authorization phase
+2025-04-28 15:18:25,740 - DEBUG - The provided initial strategy is mysql_native_password
+2025-04-28 15:18:25,740 - INFO - package: mysql.connector.plugins
+2025-04-28 15:18:25,740 - INFO - plugin_name: mysql_native_password
+2025-04-28 15:18:25,759 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-28 15:18:25,763 - DEBUG - mysql_native_password completed succesfully
+2025-04-28 15:18:25,774 - INFO - Database connection established
+2025-04-28 15:18:25,787 - INFO - Database tables initialized
+2025-04-28 15:18:25,794 - INFO - Twilio client initialized successfully
+2025-04-28 15:18:25,797 - INFO - Serving on http://0.0.0.0:5001
+2025-04-28 15:18:25,799 - DEBUG - Using selector: SelectSelector
+2025-04-28 15:19:06,382 - DEBUG - Starting authorization phase
+2025-04-28 15:19:06,382 - DEBUG - The provided initial strategy is mysql_native_password
+2025-04-28 15:19:06,384 - INFO - package: mysql.connector.plugins
+2025-04-28 15:19:06,384 - INFO - plugin_name: mysql_native_password
+2025-04-28 15:19:06,384 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-28 15:19:06,386 - DEBUG - mysql_native_password completed succesfully
+2025-04-28 15:19:06,386 - INFO - Database connection established
+2025-04-28 15:19:06,391 - INFO - Database tables initialized
+2025-04-28 15:19:06,398 - INFO - Twilio client initialized successfully
+2025-04-28 15:19:06,402 - INFO - Serving on http://0.0.0.0:5001
+2025-04-28 15:19:06,402 - DEBUG - Using selector: SelectSelector
+2025-04-28 15:19:06,409 - INFO - Start watching changes
+2025-04-28 15:19:06,409 - INFO - Start detecting changes
+2025-04-28 15:19:46,259 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-04-28 15:19:46,263 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 23.27ms
+2025-04-28 15:19:46,275 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-04-28 15:19:46,280 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 8.50ms
+2025-04-28 21:28:21,847 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-04-28 21:28:21,861 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 64.76ms
+2025-04-28 21:28:21,880 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-04-28 21:28:21,884 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 13.66ms
+2025-05-03 13:18:09,330 - ERROR - Failed to connect to database: 2002: Can't connect to local MySQL server through socket '%-.100s' (%s) (Warning: not all arguments converted during string formatting)
+2025-05-03 13:18:09,336 - INFO - Twilio client initialized successfully
+2025-05-03 13:18:09,350 - INFO - Serving on http://0.0.0.0:5001
+2025-05-03 13:18:09,354 - DEBUG - Using selector: SelectSelector
+2025-05-03 13:18:09,379 - INFO - Start watching changes
+2025-05-03 13:18:09,381 - INFO - Start detecting changes
+2025-05-03 13:18:42,378 - INFO - Shutting down...
+2025-05-03 13:18:48,657 - DEBUG - Starting authorization phase
+2025-05-03 13:18:48,657 - DEBUG - The provided initial strategy is mysql_native_password
+2025-05-03 13:18:48,657 - INFO - package: mysql.connector.plugins
+2025-05-03 13:18:48,657 - INFO - plugin_name: mysql_native_password
+2025-05-03 13:18:48,657 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-05-03 13:18:48,657 - DEBUG - mysql_native_password completed succesfully
+2025-05-03 13:18:48,657 - INFO - Database connection established
+2025-05-03 13:18:48,665 - INFO - Database tables initialized
+2025-05-03 13:18:48,665 - INFO - Twilio client initialized successfully
+2025-05-03 13:18:48,681 - INFO - Serving on http://0.0.0.0:5001
+2025-05-03 13:18:48,681 - DEBUG - Using selector: SelectSelector
+2025-05-03 13:18:48,683 - INFO - Start watching changes
+2025-05-03 13:18:48,683 - INFO - Start detecting changes
+2025-05-03 13:20:02,312 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-03 13:20:02,312 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 29.68ms
+2025-05-03 13:20:02,320 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-03 13:20:02,320 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 0.00ms
+2025-05-03 13:24:02,885 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-03 13:24:02,885 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 6.34ms
+2025-05-03 13:24:02,899 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-03 13:24:02,904 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 13.82ms
+2025-05-03 18:21:13,188 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-03 18:21:13,198 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 40.78ms
+2025-05-03 18:21:13,406 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-03 18:21:13,408 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 206.23ms
+2025-05-04 14:04:21,326 - DEBUG - Starting authorization phase
+2025-05-04 14:04:21,326 - DEBUG - The provided initial strategy is mysql_native_password
+2025-05-04 14:04:21,327 - INFO - package: mysql.connector.plugins
+2025-05-04 14:04:21,327 - INFO - plugin_name: mysql_native_password
+2025-05-04 14:04:21,327 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-05-04 14:04:21,331 - DEBUG - mysql_native_password completed succesfully
+2025-05-04 14:04:21,331 - INFO - Database connection established
+2025-05-04 14:04:21,348 - INFO - Database tables initialized
+2025-05-04 14:04:21,352 - INFO - Twilio client initialized successfully
+2025-05-04 14:04:21,359 - INFO - Serving on http://0.0.0.0:5001
+2025-05-04 14:04:21,359 - DEBUG - Using selector: SelectSelector
+2025-05-04 14:04:21,372 - INFO - Start watching changes
+2025-05-04 14:04:21,372 - INFO - Start detecting changes
+2025-05-04 14:05:36,313 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 14:05:36,313 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 43.15ms
+2025-05-04 14:05:36,327 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 14:05:36,327 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 6.23ms
+2025-05-04 14:23:02,952 - INFO - 200 OPTIONS /api/login (127.0.0.1) 7.51ms
+2025-05-04 14:23:02,964 - DEBUG - Login attempt: identifier=8799188207
+2025-05-04 14:23:02,968 - DEBUG - Query: SELECT * FROM users WHERE phone = %s AND password = %s, Result: {'user_id': 27, 'username': 'varun.in', 'email': 'quizzicalbassi1@freethecookies.com', 'password': '123456', 'birthday': datetime.date(2019, 1, 1), 'gender': 'MALE', 'phone': '8799188207', 'address': 'paris', 'state': 'Gujarat', 'pincode': '391740', 'otp': None, 'otp_verified': 1}
+2025-05-04 14:23:03,260 - INFO - -- BEGIN Twilio API Request --
+2025-05-04 14:23:03,262 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/Verifications
+2025-05-04 14:23:03,262 - INFO - Headers:
+2025-05-04 14:23:03,262 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-04 14:23:03,262 - INFO - Accept : application/json
+2025-05-04 14:23:03,262 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-04 14:23:03,262 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-04 14:23:03,262 - INFO - Accept-Charset : utf-8
+2025-05-04 14:23:03,262 - INFO - -- END Twilio API Request --
+2025-05-04 14:23:03,265 - DEBUG - Starting new HTTPS connection (1): verify.twilio.com:443
+2025-05-04 14:23:05,490 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/Verifications HTTP/1.1" 201 634
+2025-05-04 14:23:05,490 - INFO - Response Status Code: 201
+2025-05-04 14:23:05,490 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '634', 'Connection': 'keep-alive', 'Date': 'Sun, 04 May 2025 08:53:06 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ380a7c61274e1d2c262e80ac60d18159', 'Twilio-Request-Duration': '0.432', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 c89c713f7f4146c2662f6dcd13a23a9a.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': 'cdnw6hLyaUpQXCjok0gK1gQUNDYUjUiYxCxyVg2AqkqrG1D-hg0wOg=='}
+2025-05-04 14:23:05,531 - INFO - Verification sent to 8799188207 via sms: VEd9d443e2f24ad8d8749c440d408b0e70
+2025-05-04 14:23:05,531 - INFO - -- BEGIN Twilio API Request --
+2025-05-04 14:23:05,531 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/Verifications
+2025-05-04 14:23:05,531 - INFO - Headers:
+2025-05-04 14:23:05,531 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-04 14:23:05,531 - INFO - Accept : application/json
+2025-05-04 14:23:05,531 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-04 14:23:05,531 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-04 14:23:05,531 - INFO - Accept-Charset : utf-8
+2025-05-04 14:23:05,531 - INFO - -- END Twilio API Request --
+2025-05-04 14:23:06,520 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/Verifications HTTP/1.1" 201 699
+2025-05-04 14:23:06,525 - INFO - Response Status Code: 201
+2025-05-04 14:23:06,525 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '699', 'Connection': 'keep-alive', 'Date': 'Sun, 04 May 2025 08:53:07 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ28c3bbf17aa1abfd39df5c4440d7c4d4', 'Twilio-Request-Duration': '0.179', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 c89c713f7f4146c2662f6dcd13a23a9a.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': 'TYO6qlTva5kViD-qo9ZMIjugeuE6RzL3PwgMkgPWoqe-nfN2bQIQYg=='}
+2025-05-04 14:23:06,525 - INFO - Verification sent to quizzicalbassi1@freethecookies.com via email: VEa68eaf20d17eaaf64b7a55c8020e8774
+2025-05-04 14:23:06,525 - INFO - Login pending OTP: phone=8799188207, sent to [{'identifier': '8799188207', 'type': 'sms'}, {'identifier': 'quizzicalbassi1@freethecookies.com', 'type': 'email'}]
+2025-05-04 14:23:06,525 - INFO - 200 POST /api/login (127.0.0.1) 3563.23ms
+2025-05-04 14:23:20,477 - INFO - 200 OPTIONS /api/verify_code (127.0.0.1) 0.00ms
+2025-05-04 14:23:20,488 - INFO - -- BEGIN Twilio API Request --
+2025-05-04 14:23:20,488 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/VerificationCheck
+2025-05-04 14:23:20,488 - INFO - Headers:
+2025-05-04 14:23:20,488 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-04 14:23:20,488 - INFO - Accept : application/json
+2025-05-04 14:23:20,488 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-04 14:23:20,488 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-04 14:23:20,488 - INFO - Accept-Charset : utf-8
+2025-05-04 14:23:20,488 - INFO - -- END Twilio API Request --
+2025-05-04 14:23:20,824 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/VerificationCheck HTTP/1.1" 200 340
+2025-05-04 14:23:20,824 - INFO - Response Status Code: 200
+2025-05-04 14:23:20,824 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '340', 'Connection': 'keep-alive', 'Date': 'Sun, 04 May 2025 08:53:22 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ150837a771935153dd8505eec331e4b0', 'Twilio-Request-Duration': '0.034', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 c89c713f7f4146c2662f6dcd13a23a9a.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': 'nJfNFYxoa2hzfn3IXIbTZaEHmGA79u7M-JNzWTkl7HPacyMfJvUVGg=='}
+2025-05-04 14:23:20,824 - INFO - Verification check for 8799188207: approved
+2025-05-04 14:23:20,832 - INFO - phone verified for 8799188207
+2025-05-04 14:23:20,832 - INFO - 200 POST /api/verify_code (127.0.0.1) 347.23ms
+2025-05-04 14:23:20,963 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 14:23:20,963 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 3.76ms
+2025-05-04 14:23:20,971 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 14:23:20,971 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 8.27ms
+2025-05-04 14:25:03,444 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 14:25:03,444 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 0.00ms
+2025-05-04 14:25:03,452 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 14:25:03,452 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 2.35ms
+2025-05-04 14:28:49,213 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 14:28:49,222 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 16.63ms
+2025-05-04 14:28:49,230 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 14:28:49,230 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 8.42ms
+2025-05-04 14:30:22,213 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 14:30:22,213 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 5.22ms
+2025-05-04 14:30:22,221 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 14:30:22,221 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 8.09ms
+2025-05-04 14:36:44,479 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 14:36:44,479 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 8.35ms
+2025-05-04 14:36:44,489 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 14:36:44,489 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 3.74ms
+2025-05-04 16:02:08,398 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 16:02:08,400 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 14.19ms
+2025-05-04 16:02:08,422 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 16:02:08,423 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 16.42ms
+2025-05-04 16:17:55,563 - WARNING - Database connection lost, attempting to reconnect
+2025-05-04 16:17:55,577 - DEBUG - Starting authorization phase
+2025-05-04 16:17:55,577 - DEBUG - The provided initial strategy is mysql_native_password
+2025-05-04 16:17:55,579 - DEBUG - mysql_native_password completed succesfully
+2025-05-04 16:17:55,579 - INFO - Database connection established
+2025-05-04 16:17:55,588 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 16:17:55,593 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 67.52ms
+2025-05-04 16:17:55,605 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 16:17:55,605 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 8.37ms
+2025-05-04 16:18:10,627 - INFO - 200 OPTIONS /api/login (127.0.0.1) 1.97ms
+2025-05-04 16:18:10,642 - DEBUG - Login attempt: identifier=8799188207
+2025-05-04 16:18:10,644 - DEBUG - Query: SELECT * FROM users WHERE phone = %s AND password = %s, Result: {'user_id': 27, 'username': 'varun.in', 'email': 'quizzicalbassi1@freethecookies.com', 'password': '123456', 'birthday': datetime.date(2019, 1, 1), 'gender': 'MALE', 'phone': '8799188207', 'address': 'paris', 'state': 'Gujarat', 'pincode': '391740', 'otp': None, 'otp_verified': 1}
+2025-05-04 16:18:10,644 - INFO - -- BEGIN Twilio API Request --
+2025-05-04 16:18:10,644 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/Verifications
+2025-05-04 16:18:10,644 - INFO - Headers:
+2025-05-04 16:18:10,644 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-04 16:18:10,644 - INFO - Accept : application/json
+2025-05-04 16:18:10,644 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-04 16:18:10,644 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-04 16:18:10,644 - INFO - Accept-Charset : utf-8
+2025-05-04 16:18:10,644 - INFO - -- END Twilio API Request --
+2025-05-04 16:18:10,654 - DEBUG - Resetting dropped connection: verify.twilio.com
+2025-05-04 16:18:16,466 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/Verifications HTTP/1.1" 201 634
+2025-05-04 16:18:16,466 - INFO - Response Status Code: 201
+2025-05-04 16:18:16,466 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '634', 'Connection': 'keep-alive', 'Date': 'Sun, 04 May 2025 10:48:16 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQe0278a0c1abc131a06223d509f76daf5', 'Twilio-Request-Duration': '0.169', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 abf1eb055e021fa76f5b3cc60396ccc4.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': 'B1HiA2wu1ZGZKFp0FgI3SDKct2Hh_hHHBgf5UxJhX0tnXNOHWAWlIA=='}
+2025-05-04 16:18:16,474 - INFO - Verification sent to 8799188207 via sms: VE32571e404e693a7c33a2ba47282da93f
+2025-05-04 16:18:16,474 - INFO - -- BEGIN Twilio API Request --
+2025-05-04 16:18:16,474 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/Verifications
+2025-05-04 16:18:16,474 - INFO - Headers:
+2025-05-04 16:18:16,474 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-04 16:18:16,474 - INFO - Accept : application/json
+2025-05-04 16:18:16,474 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-04 16:18:16,474 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-04 16:18:16,474 - INFO - Accept-Charset : utf-8
+2025-05-04 16:18:16,474 - INFO - -- END Twilio API Request --
+2025-05-04 16:18:16,998 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/Verifications HTTP/1.1" 201 699
+2025-05-04 16:18:17,002 - INFO - Response Status Code: 201
+2025-05-04 16:18:17,002 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '699', 'Connection': 'keep-alive', 'Date': 'Sun, 04 May 2025 10:48:18 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ8fd60095ee55977c1ad815f1ffaa2e6f', 'Twilio-Request-Duration': '0.177', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 abf1eb055e021fa76f5b3cc60396ccc4.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': '5vitrh28uusPHvtUhbehG2_LZjsWeemb2zW2CUQF8PH_gpGdFvCSCw=='}
+2025-05-04 16:18:17,002 - INFO - Verification sent to quizzicalbassi1@freethecookies.com via email: VE73ac2a3dabe616d1b55fbf5f8e6c74d2
+2025-05-04 16:18:17,002 - INFO - Login pending OTP: phone=8799188207, sent to [{'identifier': '8799188207', 'type': 'sms'}, {'identifier': 'quizzicalbassi1@freethecookies.com', 'type': 'email'}]
+2025-05-04 16:18:17,004 - INFO - 200 POST /api/login (127.0.0.1) 6368.19ms
+2025-05-04 16:18:34,677 - INFO - 200 OPTIONS /api/verify_code (127.0.0.1) 0.00ms
+2025-05-04 16:18:34,684 - INFO - -- BEGIN Twilio API Request --
+2025-05-04 16:18:34,684 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/VerificationCheck
+2025-05-04 16:18:34,684 - INFO - Headers:
+2025-05-04 16:18:34,684 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-04 16:18:34,684 - INFO - Accept : application/json
+2025-05-04 16:18:34,684 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-04 16:18:34,684 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-04 16:18:34,684 - INFO - Accept-Charset : utf-8
+2025-05-04 16:18:34,684 - INFO - -- END Twilio API Request --
+2025-05-04 16:18:35,135 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/VerificationCheck HTTP/1.1" 200 340
+2025-05-04 16:18:35,135 - INFO - Response Status Code: 200
+2025-05-04 16:18:35,135 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '340', 'Connection': 'keep-alive', 'Date': 'Sun, 04 May 2025 10:48:36 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ1e51a536367ec429c1a930bfed147a87', 'Twilio-Request-Duration': '0.028', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 abf1eb055e021fa76f5b3cc60396ccc4.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': 'KmT7omQ8MdIjEkgHYPjx_56127K0dcbomtkktQ_5T27WaHK_8R_Cyg=='}
+2025-05-04 16:18:35,135 - INFO - Verification check for 8799188207: approved
+2025-05-04 16:18:35,142 - INFO - phone verified for 8799188207
+2025-05-04 16:18:35,142 - INFO - 200 POST /api/verify_code (127.0.0.1) 457.67ms
+2025-05-04 16:18:35,290 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 16:18:35,292 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 7.78ms
+2025-05-04 16:18:35,297 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 16:18:35,297 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 3.04ms
+2025-05-04 16:19:21,463 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 16:19:21,465 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 11.54ms
+2025-05-04 16:19:21,468 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 16:19:21,469 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 3.84ms
+2025-05-04 16:21:16,574 - INFO - 200 OPTIONS /api/signup (127.0.0.1) 5.32ms
+2025-05-04 16:21:16,593 - INFO - User signed up: email=varunshah314@gmail.com
+2025-05-04 16:21:16,593 - INFO - 201 POST /api/signup (127.0.0.1) 13.62ms
+2025-05-04 16:21:36,510 - INFO - 200 OPTIONS /api/login (127.0.0.1) 0.00ms
+2025-05-04 16:21:36,513 - DEBUG - Login attempt: identifier=varunshah314@gmail.com
+2025-05-04 16:21:36,517 - DEBUG - Query: SELECT * FROM users WHERE email = %s AND password = %s, Result: {'user_id': 31, 'username': 'NewUser', 'email': 'varunshah314@gmail.com', 'password': '123456', 'birthday': None, 'gender': 'Unknown', 'phone': None, 'address': None, 'state': None, 'pincode': None, 'otp': None, 'otp_verified': 0}
+2025-05-04 16:21:36,517 - INFO - -- BEGIN Twilio API Request --
+2025-05-04 16:21:36,517 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/Verifications
+2025-05-04 16:21:36,517 - INFO - Headers:
+2025-05-04 16:21:36,517 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-04 16:21:36,517 - INFO - Accept : application/json
+2025-05-04 16:21:36,517 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-04 16:21:36,517 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-04 16:21:36,520 - INFO - Accept-Charset : utf-8
+2025-05-04 16:21:36,520 - INFO - -- END Twilio API Request --
+2025-05-04 16:21:38,613 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/Verifications HTTP/1.1" 201 687
+2025-05-04 16:21:38,613 - INFO - Response Status Code: 201
+2025-05-04 16:21:38,613 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '687', 'Connection': 'keep-alive', 'Date': 'Sun, 04 May 2025 10:51:39 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ1b557692b97d07f2a5fb79d93fce8492', 'Twilio-Request-Duration': '0.158', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 abf1eb055e021fa76f5b3cc60396ccc4.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': 'JdpnRBeIIap8LBOBx2PxdN-Y1g5Qwnqj-rKGAyRD60ASy-UJzt4HWQ=='}
+2025-05-04 16:21:38,613 - INFO - Verification sent to varunshah314@gmail.com via email: VE3c17da9bded8d9de38bd2546d32e210a
+2025-05-04 16:21:38,613 - INFO - Login pending OTP: email=varunshah314@gmail.com, sent to [{'identifier': 'varunshah314@gmail.com', 'type': 'email'}]
+2025-05-04 16:21:38,613 - INFO - 200 POST /api/login (127.0.0.1) 2100.90ms
+2025-05-04 16:22:12,558 - INFO - 200 OPTIONS /api/verify_code (127.0.0.1) 0.00ms
+2025-05-04 16:22:12,567 - INFO - -- BEGIN Twilio API Request --
+2025-05-04 16:22:12,567 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/VerificationCheck
+2025-05-04 16:22:12,567 - INFO - Headers:
+2025-05-04 16:22:12,567 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-04 16:22:12,567 - INFO - Accept : application/json
+2025-05-04 16:22:12,567 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-04 16:22:12,567 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-04 16:22:12,567 - INFO - Accept-Charset : utf-8
+2025-05-04 16:22:12,567 - INFO - -- END Twilio API Request --
+2025-05-04 16:22:12,926 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/VerificationCheck HTTP/1.1" 200 351
+2025-05-04 16:22:12,926 - INFO - Response Status Code: 200
+2025-05-04 16:22:12,926 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '351', 'Connection': 'keep-alive', 'Date': 'Sun, 04 May 2025 10:52:14 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ9a95c6b4bacbbd5cefcc288d154e5233', 'Twilio-Request-Duration': '0.037', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 abf1eb055e021fa76f5b3cc60396ccc4.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': 'XjoB-oQ-4fqVAycTH9S6VmtgvlG5e7XXuESY7XYJtpZw4xxhMD1QgQ=='}
+2025-05-04 16:22:12,928 - INFO - Verification check for varunshah314@gmail.com: approved
+2025-05-04 16:22:12,938 - INFO - email verified for varunshah314@gmail.com
+2025-05-04 16:22:12,938 - INFO - 200 POST /api/verify_code (127.0.0.1) 371.61ms
+2025-05-04 16:22:13,069 - INFO - Profile fetched for email=varunshah314@gmail.com
+2025-05-04 16:22:13,070 - INFO - 200 GET /api/profile?identifier=varunshah314%40gmail.com (127.0.0.1) 5.67ms
+2025-05-04 16:22:13,077 - INFO - Profile fetched for email=varunshah314@gmail.com
+2025-05-04 16:22:13,078 - INFO - 200 GET /api/profile?identifier=varunshah314%40gmail.com (127.0.0.1) 5.68ms
+2025-05-04 16:23:43,491 - INFO - 200 OPTIONS /api/update_profile (127.0.0.1) 2.84ms
+2025-05-04 16:23:43,515 - DEBUG - Update query: UPDATE users SET address = %s, birthday = %s, email = %s, gender = %s, pincode = %s, state = %s, username = %s WHERE email = %s, Values: ['london', '2025-04-08', 'varunshah314@gmail.com', 'MALE', '391740', 'Gujarat', 'Varun', 'varunshah314@gmail.com']
+2025-05-04 16:23:43,529 - INFO - Profile updated for email=varunshah314@gmail.com
+2025-05-04 16:23:43,529 - INFO - 200 POST /api/update_profile (127.0.0.1) 32.89ms
+2025-05-04 16:23:43,541 - INFO - Profile fetched for email=varunshah314@gmail.com
+2025-05-04 16:23:43,543 - INFO - 200 GET /api/profile?identifier=varunshah314%40gmail.com (127.0.0.1) 5.44ms
+2025-05-04 16:24:08,222 - INFO - Profile fetched for email=varunshah314@gmail.com
+2025-05-04 16:24:08,222 - INFO - 200 GET /api/profile?identifier=varunshah314%40gmail.com (127.0.0.1) 3.10ms
+2025-05-04 16:24:08,228 - INFO - Profile fetched for email=varunshah314@gmail.com
+2025-05-04 16:24:08,228 - INFO - 200 GET /api/profile?identifier=varunshah314%40gmail.com (127.0.0.1) 3.09ms
+2025-05-04 16:24:19,849 - INFO - 200 OPTIONS /api/update_profile (127.0.0.1) 0.00ms
+2025-05-04 16:24:19,861 - DEBUG - Update query: UPDATE users SET address = %s, birthday = %s, email = %s, gender = %s, pincode = %s, state = %s, username = %s WHERE email = %s, Values: ['london', '2025-04-08', 'varunshah314@gmail.com', 'MALE', '391740', 'Gujarat', 'Spiderman', 'varunshah314@gmail.com']
+2025-05-04 16:24:19,870 - INFO - Profile updated for email=varunshah314@gmail.com
+2025-05-04 16:24:19,870 - INFO - 200 POST /api/update_profile (127.0.0.1) 13.43ms
+2025-05-04 16:24:20,009 - INFO - Profile fetched for email=varunshah314@gmail.com
+2025-05-04 16:24:20,012 - INFO - 200 GET /api/profile?identifier=varunshah314%40gmail.com (127.0.0.1) 11.20ms
+2025-05-04 16:24:26,048 - INFO - Profile fetched for email=varunshah314@gmail.com
+2025-05-04 16:24:26,050 - INFO - 200 GET /api/profile?identifier=varunshah314%40gmail.com (127.0.0.1) 5.12ms
+2025-05-04 16:24:26,055 - INFO - Profile fetched for email=varunshah314@gmail.com
+2025-05-04 16:24:26,057 - INFO - 200 GET /api/profile?identifier=varunshah314%40gmail.com (127.0.0.1) 4.21ms
+2025-05-04 16:25:12,725 - INFO - Profile fetched for email=varunshah314@gmail.com
+2025-05-04 16:25:12,727 - INFO - 200 GET /api/profile?identifier=varunshah314%40gmail.com (127.0.0.1) 5.81ms
+2025-05-04 16:25:12,733 - INFO - Profile fetched for email=varunshah314@gmail.com
+2025-05-04 16:25:12,737 - INFO - 200 GET /api/profile?identifier=varunshah314%40gmail.com (127.0.0.1) 7.83ms
+2025-05-04 16:26:07,478 - INFO - 200 OPTIONS /api/login (127.0.0.1) 3.46ms
+2025-05-04 16:26:07,486 - DEBUG - Login attempt: identifier=8799188207
+2025-05-04 16:26:07,486 - DEBUG - Query: SELECT * FROM users WHERE phone = %s AND password = %s, Result: {'user_id': 27, 'username': 'varun.in', 'email': 'quizzicalbassi1@freethecookies.com', 'password': '123456', 'birthday': datetime.date(2019, 1, 1), 'gender': 'MALE', 'phone': '8799188207', 'address': 'paris', 'state': 'Gujarat', 'pincode': '391740', 'otp': None, 'otp_verified': 1}
+2025-05-04 16:26:07,486 - INFO - -- BEGIN Twilio API Request --
+2025-05-04 16:26:07,486 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/Verifications
+2025-05-04 16:26:07,491 - INFO - Headers:
+2025-05-04 16:26:07,491 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-04 16:26:07,491 - INFO - Accept : application/json
+2025-05-04 16:26:07,491 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-04 16:26:07,491 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-04 16:26:07,491 - INFO - Accept-Charset : utf-8
+2025-05-04 16:26:07,491 - INFO - -- END Twilio API Request --
+2025-05-04 16:26:07,912 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/Verifications HTTP/1.1" 201 634
+2025-05-04 16:26:07,912 - INFO - Response Status Code: 201
+2025-05-04 16:26:07,912 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '634', 'Connection': 'keep-alive', 'Date': 'Sun, 04 May 2025 10:56:09 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQb50c589143ddef2c6b8ead9c06080b5d', 'Twilio-Request-Duration': '0.156', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 abf1eb055e021fa76f5b3cc60396ccc4.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': 'mx3jSCRrusB314VrJPCm6ARfyGaHrsDAKbW2xmC9dpvZmMKPcQ9BXA=='}
+2025-05-04 16:26:07,912 - INFO - Verification sent to 8799188207 via sms: VE020d9845561b53bae435a75ef805e01d
+2025-05-04 16:26:07,912 - INFO - -- BEGIN Twilio API Request --
+2025-05-04 16:26:07,912 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/Verifications
+2025-05-04 16:26:07,912 - INFO - Headers:
+2025-05-04 16:26:07,916 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-04 16:26:07,916 - INFO - Accept : application/json
+2025-05-04 16:26:07,916 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-04 16:26:07,917 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-04 16:26:07,917 - INFO - Accept-Charset : utf-8
+2025-05-04 16:26:07,918 - INFO - -- END Twilio API Request --
+2025-05-04 16:26:08,764 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/Verifications HTTP/1.1" 201 850
+2025-05-04 16:26:08,768 - INFO - Response Status Code: 201
+2025-05-04 16:26:08,768 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '850', 'Connection': 'keep-alive', 'Date': 'Sun, 04 May 2025 10:56:10 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ739c808a92c44a8a8f1f3c96611b147e', 'Twilio-Request-Duration': '0.116', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 abf1eb055e021fa76f5b3cc60396ccc4.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': '_4xl1OFxJkKTVVJgeTnzOzV5xSplD0cb3RLPZcCcyeVBkFMTJWIVpg=='}
+2025-05-04 16:26:08,768 - INFO - Verification sent to quizzicalbassi1@freethecookies.com via email: VE73ac2a3dabe616d1b55fbf5f8e6c74d2
+2025-05-04 16:26:08,768 - INFO - Login pending OTP: phone=8799188207, sent to [{'identifier': '8799188207', 'type': 'sms'}, {'identifier': 'quizzicalbassi1@freethecookies.com', 'type': 'email'}]
+2025-05-04 16:26:08,768 - INFO - 200 POST /api/login (127.0.0.1) 1283.83ms
+2025-05-04 16:26:27,321 - INFO - 200 OPTIONS /api/verify_code (127.0.0.1) 2.02ms
+2025-05-04 16:26:27,327 - INFO - -- BEGIN Twilio API Request --
+2025-05-04 16:26:27,327 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/VerificationCheck
+2025-05-04 16:26:27,327 - INFO - Headers:
+2025-05-04 16:26:27,327 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-04 16:26:27,327 - INFO - Accept : application/json
+2025-05-04 16:26:27,327 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-04 16:26:27,327 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-04 16:26:27,327 - INFO - Accept-Charset : utf-8
+2025-05-04 16:26:27,327 - INFO - -- END Twilio API Request --
+2025-05-04 16:26:27,620 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA6ccc14de778f3c64e166fb35b4f8ea1f/VerificationCheck HTTP/1.1" 200 340
+2025-05-04 16:26:27,620 - INFO - Response Status Code: 200
+2025-05-04 16:26:27,620 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '340', 'Connection': 'keep-alive', 'Date': 'Sun, 04 May 2025 10:56:28 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ8fd3b042ab8a020120e5a3ab038bf6b3', 'Twilio-Request-Duration': '0.048', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 abf1eb055e021fa76f5b3cc60396ccc4.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': '5eVHS1BasfnqCgZtns0V08_eSPZeFBzFkuGx74-WpzT5YViJiELVLw=='}
+2025-05-04 16:26:27,628 - INFO - Verification check for 8799188207: approved
+2025-05-04 16:26:27,629 - INFO - phone verified for 8799188207
+2025-05-04 16:26:27,629 - INFO - 200 POST /api/verify_code (127.0.0.1) 304.59ms
+2025-05-04 16:26:27,755 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 16:26:27,757 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 6.05ms
+2025-05-04 16:26:27,759 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-04 16:26:27,762 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 4.81ms
+2025-05-05 10:34:19,699 - ERROR - Failed to connect to database: 2002: Can't connect to local MySQL server through socket '%-.100s' (%s) (Warning: not all arguments converted during string formatting)
+2025-05-05 10:34:19,702 - INFO - Twilio client initialized successfully
+2025-05-05 10:34:19,702 - INFO - Serving on http://0.0.0.0:5001
+2025-05-05 10:34:19,709 - DEBUG - Using selector: SelectSelector
+2025-05-05 10:34:19,712 - INFO - Start watching changes
+2025-05-05 10:34:19,712 - INFO - Start detecting changes
+2025-05-05 10:34:34,936 - INFO - Shutting down...
+2025-05-05 10:34:45,735 - DEBUG - Starting authorization phase
+2025-05-05 10:34:45,735 - DEBUG - The provided initial strategy is mysql_native_password
+2025-05-05 10:34:45,735 - INFO - package: mysql.connector.plugins
+2025-05-05 10:34:45,735 - INFO - plugin_name: mysql_native_password
+2025-05-05 10:34:45,735 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-05-05 10:34:45,735 - DEBUG - mysql_native_password completed succesfully
+2025-05-05 10:34:45,735 - INFO - Database connection established
+2025-05-05 10:34:45,744 - INFO - Database tables initialized
+2025-05-05 10:34:45,744 - INFO - Twilio client initialized successfully
+2025-05-05 10:34:45,758 - INFO - Serving on http://0.0.0.0:5001
+2025-05-05 10:34:45,758 - DEBUG - Using selector: SelectSelector
+2025-05-05 10:34:45,765 - INFO - Start watching changes
+2025-05-05 10:34:45,765 - INFO - Start detecting changes
+2025-05-05 10:35:25,711 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-05 10:35:25,713 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 21.89ms
+2025-05-05 10:35:25,728 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-05 10:35:25,732 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 11.84ms
+2025-05-05 10:38:36,927 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-05 10:38:36,935 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 8.11ms
+2025-05-05 10:38:36,948 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-05 10:38:36,948 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 8.02ms
+2025-05-05 10:47:58,849 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-05 10:47:58,849 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 5.12ms
+2025-05-05 10:47:58,861 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-05 10:47:58,864 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 8.77ms
+2025-05-05 11:01:45,448 - WARNING - Database connection lost, attempting to reconnect
+2025-05-05 11:01:45,448 - DEBUG - Starting authorization phase
+2025-05-05 11:01:45,456 - DEBUG - The provided initial strategy is mysql_native_password
+2025-05-05 11:01:45,458 - DEBUG - mysql_native_password completed succesfully
+2025-05-05 11:01:45,458 - INFO - Database connection established
+2025-05-05 11:01:45,465 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-05 11:01:45,473 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 33.72ms
+2025-05-05 11:01:45,484 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-05 11:01:45,488 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 10.16ms
+2025-05-05 11:03:19,583 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-05 11:03:19,583 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 8.18ms
+2025-05-05 11:03:19,591 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-05 11:03:19,591 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 8.20ms
+2025-05-05 11:08:17,403 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-05 11:08:17,403 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 8.82ms
+2025-05-05 11:08:17,413 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-05 11:08:17,415 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 7.62ms
+2025-05-05 11:10:44,041 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-05 11:10:44,041 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 1.63ms
+2025-05-05 11:10:44,057 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-05 11:10:44,057 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 8.13ms
+2025-05-05 11:10:58,412 - INFO - 200 OPTIONS /api/login (127.0.0.1) 0.00ms
+2025-05-05 11:10:58,426 - DEBUG - Login attempt: identifier=8799188207
+2025-05-05 11:10:58,430 - DEBUG - Query: SELECT * FROM users WHERE phone = %s AND password = %s, Result: {'user_id': 27, 'username': 'varun.in', 'email': 'quizzicalbassi1@freethecookies.com', 'password': '123456', 'birthday': datetime.date(2019, 1, 1), 'gender': 'MALE', 'phone': '8799188207', 'address': 'paris', 'state': 'Gujarat', 'pincode': '391740', 'otp': None, 'otp_verified': 1}
+2025-05-05 11:10:58,789 - INFO - -- BEGIN Twilio API Request --
+2025-05-05 11:10:58,789 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA50cc309193d5a1ac76543f9d76ea9c95/Verifications
+2025-05-05 11:10:58,793 - INFO - Headers:
+2025-05-05 11:10:58,793 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-05 11:10:58,793 - INFO - Accept : application/json
+2025-05-05 11:10:58,793 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-05 11:10:58,794 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-05 11:10:58,794 - INFO - Accept-Charset : utf-8
+2025-05-05 11:10:58,794 - INFO - -- END Twilio API Request --
+2025-05-05 11:10:58,794 - DEBUG - Starting new HTTPS connection (1): verify.twilio.com:443
+2025-05-05 11:10:59,654 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA50cc309193d5a1ac76543f9d76ea9c95/Verifications HTTP/1.1" 403 252
+2025-05-05 11:10:59,654 - INFO - Response Status Code: 403
+2025-05-05 11:10:59,654 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '252', 'Connection': 'keep-alive', 'Date': 'Mon, 05 May 2025 05:40:59 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQe5396fe2e0f8e98db16349a0dd687345', 'Twilio-Request-Duration': '0.034', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 f93f5bee6e7a19ce8854e491cbe39f86.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': 'jw-ZHzL45kFcwd-nHrQB59wg3sHkfjBoSHEPozFF-lFNMgqpTUoc6A=='}
+2025-05-05 11:10:59,654 - ERROR - Twilio error sending OTP to 8799188207: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA50cc309193d5a1ac76543f9d76ea9c95/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: The phone number is unverified. Trial accounts cannot send messages to unverified numbers; verify it at twilio.com/user/account/phone-numbers/verified[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/21608[0m
+
+
+2025-05-05 11:10:59,654 - ERROR - Twilio error sending OTP: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA50cc309193d5a1ac76543f9d76ea9c95/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: The phone number is unverified. Trial accounts cannot send messages to unverified numbers; verify it at twilio.com/user/account/phone-numbers/verified[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/21608[0m
+
+
+2025-05-05 11:10:59,654 - ERROR - 503 POST /api/login (127.0.0.1) 1231.76ms
+2025-05-05 11:14:23,069 - INFO - 200 OPTIONS /api/login (127.0.0.1) 1.63ms
+2025-05-05 11:14:23,076 - DEBUG - Login attempt: identifier=8799188207
+2025-05-05 11:14:23,076 - DEBUG - Query: SELECT * FROM users WHERE phone = %s AND password = %s, Result: {'user_id': 27, 'username': 'varun.in', 'email': 'quizzicalbassi1@freethecookies.com', 'password': '123456', 'birthday': datetime.date(2019, 1, 1), 'gender': 'MALE', 'phone': '8799188207', 'address': 'paris', 'state': 'Gujarat', 'pincode': '391740', 'otp': None, 'otp_verified': 1}
+2025-05-05 11:14:23,076 - INFO - -- BEGIN Twilio API Request --
+2025-05-05 11:14:23,076 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA50cc309193d5a1ac76543f9d76ea9c95/Verifications
+2025-05-05 11:14:23,076 - INFO - Headers:
+2025-05-05 11:14:23,076 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-05 11:14:23,076 - INFO - Accept : application/json
+2025-05-05 11:14:23,076 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-05 11:14:23,076 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-05 11:14:23,076 - INFO - Accept-Charset : utf-8
+2025-05-05 11:14:23,076 - INFO - -- END Twilio API Request --
+2025-05-05 11:14:23,501 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA50cc309193d5a1ac76543f9d76ea9c95/Verifications HTTP/1.1" 403 252
+2025-05-05 11:14:23,501 - INFO - Response Status Code: 403
+2025-05-05 11:14:23,501 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '252', 'Connection': 'keep-alive', 'Date': 'Mon, 05 May 2025 05:44:23 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQaf8601b82f08afb52aa6d6618368dd0b', 'Twilio-Request-Duration': '0.018', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 f93f5bee6e7a19ce8854e491cbe39f86.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': '5HnvOAl0LYuekXNn4AgUx4KkBgIFPQ4xFW9dXsadkDBdGiIGcexluA=='}
+2025-05-05 11:14:23,501 - ERROR - Twilio error sending OTP to 8799188207: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA50cc309193d5a1ac76543f9d76ea9c95/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: The phone number is unverified. Trial accounts cannot send messages to unverified numbers; verify it at twilio.com/user/account/phone-numbers/verified[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/21608[0m
+
+
+2025-05-05 11:14:23,501 - ERROR - Twilio error sending OTP: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA50cc309193d5a1ac76543f9d76ea9c95/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: The phone number is unverified. Trial accounts cannot send messages to unverified numbers; verify it at twilio.com/user/account/phone-numbers/verified[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/21608[0m
+
+
+2025-05-05 11:14:23,509 - ERROR - 503 POST /api/login (127.0.0.1) 435.38ms
+2025-05-07 18:32:12,155 - DEBUG - Starting authorization phase
+2025-05-07 18:32:12,155 - DEBUG - The provided initial strategy is mysql_native_password
+2025-05-07 18:32:12,155 - INFO - package: mysql.connector.plugins
+2025-05-07 18:32:12,155 - INFO - plugin_name: mysql_native_password
+2025-05-07 18:32:12,155 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-05-07 18:32:12,155 - DEBUG - mysql_native_password completed succesfully
+2025-05-07 18:32:12,155 - INFO - Database connection established
+2025-05-07 18:32:12,173 - INFO - Database tables initialized
+2025-05-07 18:32:12,175 - INFO - Twilio client initialized successfully
+2025-05-07 18:32:12,175 - INFO - Serving on http://0.0.0.0:5001
+2025-05-07 18:32:12,175 - DEBUG - Using selector: SelectSelector
+2025-05-07 18:32:12,175 - INFO - Start watching changes
+2025-05-07 18:32:12,175 - INFO - Start detecting changes
+2025-05-07 18:33:11,165 - INFO - 200 OPTIONS /api/login (127.0.0.1) 2.26ms
+2025-05-07 18:33:11,258 - DEBUG - Login attempt: identifier=8799188207
+2025-05-07 18:33:11,274 - DEBUG - Query: SELECT * FROM users WHERE phone = %s AND password = %s, Result: {'user_id': 27, 'username': 'varun.in', 'email': 'quizzicalbassi1@freethecookies.com', 'password': '123456', 'birthday': datetime.date(2019, 1, 1), 'gender': 'MALE', 'phone': '8799188207', 'address': 'paris', 'state': 'Gujarat', 'pincode': '391740', 'otp': None, 'otp_verified': 1}
+2025-05-07 18:33:11,367 - INFO - -- BEGIN Twilio API Request --
+2025-05-07 18:33:11,367 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-05-07 18:33:11,367 - INFO - Headers:
+2025-05-07 18:33:11,368 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-07 18:33:11,368 - INFO - Accept : application/json
+2025-05-07 18:33:11,368 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-07 18:33:11,368 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-07 18:33:11,368 - INFO - Accept-Charset : utf-8
+2025-05-07 18:33:11,368 - INFO - -- END Twilio API Request --
+2025-05-07 18:33:11,371 - DEBUG - Starting new HTTPS connection (1): verify.twilio.com:443
+2025-05-07 18:33:11,944 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 201 634
+2025-05-07 18:33:11,945 - INFO - Response Status Code: 201
+2025-05-07 18:33:11,946 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '634', 'Connection': 'keep-alive', 'Date': 'Wed, 07 May 2025 13:03:11 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQc94857fcf31d1e74a0856665cc3f9bf1', 'Twilio-Request-Duration': '0.194', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 c67710fc569d98c780039c17b3fc4eda.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': '_ubAA8QLcGeuWqMyY-cN4Spo_fwyHCQL28wHBC_to-bNLqq1Fdnm8A=='}
+2025-05-07 18:33:11,951 - INFO - Verification sent to 8799188207 via sms: VE4ed15b8931146921497a14aea87ec5f4
+2025-05-07 18:33:11,951 - INFO - -- BEGIN Twilio API Request --
+2025-05-07 18:33:11,951 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-05-07 18:33:11,951 - INFO - Headers:
+2025-05-07 18:33:11,951 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-07 18:33:11,951 - INFO - Accept : application/json
+2025-05-07 18:33:11,951 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-07 18:33:11,951 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-07 18:33:11,951 - INFO - Accept-Charset : utf-8
+2025-05-07 18:33:11,952 - INFO - -- END Twilio API Request --
+2025-05-07 18:33:12,602 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 400 134
+2025-05-07 18:33:12,604 - INFO - Response Status Code: 400
+2025-05-07 18:33:12,604 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Wed, 07 May 2025 13:03:11 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQf90d12bf61d3684b46264657b877e219', 'Twilio-Request-Duration': '0.021', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 c67710fc569d98c780039c17b3fc4eda.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': 'CUy0XjjMtrPpx-85XARxiBD6ntLOPx_RYIIgsEqlD-8CO5m-7Q92zQ=='}
+2025-05-07 18:33:12,605 - ERROR - Twilio error sending OTP to quizzicalbassi1@freethecookies.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-07 18:33:12,605 - WARNING - Failed to send email OTP to quizzicalbassi1@freethecookies.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-07 18:33:12,605 - INFO - Login pending OTP: phone=8799188207, sent to [{'identifier': '8799188207', 'type': 'sms'}]
+2025-05-07 18:33:12,606 - INFO - 200 POST /api/login (127.0.0.1) 1348.87ms
+2025-05-07 18:33:35,274 - INFO - 200 OPTIONS /api/verify_code (127.0.0.1) 2.00ms
+2025-05-07 18:33:35,278 - INFO - -- BEGIN Twilio API Request --
+2025-05-07 18:33:35,278 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/VerificationCheck
+2025-05-07 18:33:35,278 - INFO - Headers:
+2025-05-07 18:33:35,278 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-07 18:33:35,278 - INFO - Accept : application/json
+2025-05-07 18:33:35,278 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-07 18:33:35,278 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-07 18:33:35,278 - INFO - Accept-Charset : utf-8
+2025-05-07 18:33:35,278 - INFO - -- END Twilio API Request --
+2025-05-07 18:33:35,551 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/VerificationCheck HTTP/1.1" 200 340
+2025-05-07 18:33:35,551 - INFO - Response Status Code: 200
+2025-05-07 18:33:35,551 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '340', 'Connection': 'keep-alive', 'Date': 'Wed, 07 May 2025 13:03:34 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ0339490912d1675d7502cda8b9965927', 'Twilio-Request-Duration': '0.038', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 c67710fc569d98c780039c17b3fc4eda.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': 'mDIpPgPIhvpVUZV1AgHBCFPJNsBqKPW2URPceLWdj1tZfsJJ-pQEHA=='}
+2025-05-07 18:33:35,552 - INFO - Verification check for 8799188207: approved
+2025-05-07 18:33:35,554 - INFO - phone verified for 8799188207
+2025-05-07 18:33:35,555 - INFO - 200 POST /api/verify_code (127.0.0.1) 278.29ms
+2025-05-07 18:33:35,594 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-07 18:33:35,595 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 5.25ms
+2025-05-07 18:33:35,598 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-07 18:33:35,599 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 3.00ms
+2025-05-07 18:36:33,747 - INFO - 200 OPTIONS /api/login (127.0.0.1) 2.00ms
+2025-05-07 18:36:33,751 - DEBUG - Login attempt: identifier=varunshah314@gmail.com
+2025-05-07 18:36:33,753 - DEBUG - Query: SELECT * FROM users WHERE email = %s AND password = %s, Result: {'user_id': 31, 'username': 'Spiderman', 'email': 'varunshah314@gmail.com', 'password': '123456', 'birthday': datetime.date(2025, 4, 8), 'gender': 'MALE', 'phone': None, 'address': 'london', 'state': 'Gujarat', 'pincode': '391740', 'otp': None, 'otp_verified': 1}
+2025-05-07 18:36:33,753 - INFO - -- BEGIN Twilio API Request --
+2025-05-07 18:36:33,754 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-05-07 18:36:33,754 - INFO - Headers:
+2025-05-07 18:36:33,754 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-07 18:36:33,754 - INFO - Accept : application/json
+2025-05-07 18:36:33,754 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-07 18:36:33,754 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-07 18:36:33,754 - INFO - Accept-Charset : utf-8
+2025-05-07 18:36:33,754 - INFO - -- END Twilio API Request --
+2025-05-07 18:36:34,023 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 400 134
+2025-05-07 18:36:34,024 - INFO - Response Status Code: 400
+2025-05-07 18:36:34,024 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Wed, 07 May 2025 13:06:33 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ3e6b67f7a8940ec9b6ac838fd90244cc', 'Twilio-Request-Duration': '0.032', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 c67710fc569d98c780039c17b3fc4eda.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': 'Ch2l-E_GugTfiObjldyjx1_LbAN5XWL3jBUFi9fGIYOKfKGv6OpkPg=='}
+2025-05-07 18:36:34,025 - ERROR - Twilio error sending OTP to varunshah314@gmail.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-07 18:36:34,025 - ERROR - Twilio error sending OTP: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-07 18:36:34,025 - ERROR - 503 POST /api/login (127.0.0.1) 276.27ms
+2025-05-07 18:37:05,515 - INFO - 200 OPTIONS /api/login (127.0.0.1) 2.00ms
+2025-05-07 18:37:05,517 - DEBUG - Login attempt: identifier=varunshah314@gmail.com
+2025-05-07 18:37:05,518 - DEBUG - Query: SELECT * FROM users WHERE email = %s AND password = %s, Result: {'user_id': 31, 'username': 'Spiderman', 'email': 'varunshah314@gmail.com', 'password': '123456', 'birthday': datetime.date(2025, 4, 8), 'gender': 'MALE', 'phone': None, 'address': 'london', 'state': 'Gujarat', 'pincode': '391740', 'otp': None, 'otp_verified': 1}
+2025-05-07 18:37:05,519 - INFO - -- BEGIN Twilio API Request --
+2025-05-07 18:37:05,519 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-05-07 18:37:05,519 - INFO - Headers:
+2025-05-07 18:37:05,519 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-07 18:37:05,519 - INFO - Accept : application/json
+2025-05-07 18:37:05,519 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-07 18:37:05,519 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-07 18:37:05,519 - INFO - Accept-Charset : utf-8
+2025-05-07 18:37:05,519 - INFO - -- END Twilio API Request --
+2025-05-07 18:37:06,173 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 400 134
+2025-05-07 18:37:06,174 - INFO - Response Status Code: 400
+2025-05-07 18:37:06,174 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Wed, 07 May 2025 13:07:05 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQaf47c01159491fb25478ba073255114a', 'Twilio-Request-Duration': '0.026', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 c67710fc569d98c780039c17b3fc4eda.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': '0koZ5qQ3h_huZ6x78xnkK9abh1puemfxguxddtAdBUELyo0mmn92ew=='}
+2025-05-07 18:37:06,174 - ERROR - Twilio error sending OTP to varunshah314@gmail.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-07 18:37:06,174 - ERROR - Twilio error sending OTP: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-07 18:37:06,175 - ERROR - 503 POST /api/login (127.0.0.1) 658.58ms
+2025-05-07 18:39:18,271 - INFO - 200 OPTIONS /api/login (127.0.0.1) 0.00ms
+2025-05-07 18:39:18,274 - DEBUG - Login attempt: identifier=8799188207
+2025-05-07 18:39:18,275 - DEBUG - Query: SELECT * FROM users WHERE phone = %s AND password = %s, Result: {'user_id': 27, 'username': 'varun.in', 'email': 'quizzicalbassi1@freethecookies.com', 'password': '123456', 'birthday': datetime.date(2019, 1, 1), 'gender': 'MALE', 'phone': '8799188207', 'address': 'paris', 'state': 'Gujarat', 'pincode': '391740', 'otp': None, 'otp_verified': 1}
+2025-05-07 18:39:18,276 - INFO - -- BEGIN Twilio API Request --
+2025-05-07 18:39:18,276 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-05-07 18:39:18,276 - INFO - Headers:
+2025-05-07 18:39:18,276 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-07 18:39:18,276 - INFO - Accept : application/json
+2025-05-07 18:39:18,276 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-07 18:39:18,276 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-07 18:39:18,276 - INFO - Accept-Charset : utf-8
+2025-05-07 18:39:18,276 - INFO - -- END Twilio API Request --
+2025-05-07 18:39:18,696 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 201 634
+2025-05-07 18:39:18,696 - INFO - Response Status Code: 201
+2025-05-07 18:39:18,697 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '634', 'Connection': 'keep-alive', 'Date': 'Wed, 07 May 2025 13:09:17 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQb2f366858e5ffd1018a78ea56ae92e27', 'Twilio-Request-Duration': '0.168', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 c67710fc569d98c780039c17b3fc4eda.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': 'jwB0viB--cncWbacynvixyAHSe4lGT16p9xzkH-RM0YPa0lCCpF8QA=='}
+2025-05-07 18:39:18,697 - INFO - Verification sent to 8799188207 via sms: VE5d29522977b4bdb0860b8bb1be288741
+2025-05-07 18:39:18,698 - INFO - -- BEGIN Twilio API Request --
+2025-05-07 18:39:18,698 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-05-07 18:39:18,698 - INFO - Headers:
+2025-05-07 18:39:18,698 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-07 18:39:18,698 - INFO - Accept : application/json
+2025-05-07 18:39:18,698 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-07 18:39:18,698 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-07 18:39:18,698 - INFO - Accept-Charset : utf-8
+2025-05-07 18:39:18,699 - INFO - -- END Twilio API Request --
+2025-05-07 18:39:19,326 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 400 134
+2025-05-07 18:39:19,326 - INFO - Response Status Code: 400
+2025-05-07 18:39:19,326 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Wed, 07 May 2025 13:09:18 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQae4e55431d4e9d2cec7ac0a37fe6f95a', 'Twilio-Request-Duration': '0.020', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 c67710fc569d98c780039c17b3fc4eda.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': 'I60y32dWilJgisSGrlOqmyY1-PxJh9nBKAbQCvAY7cbW_rc6nQe4kg=='}
+2025-05-07 18:39:19,326 - ERROR - Twilio error sending OTP to quizzicalbassi1@freethecookies.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-07 18:39:19,326 - WARNING - Failed to send email OTP to quizzicalbassi1@freethecookies.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-07 18:39:19,326 - INFO - Login pending OTP: phone=8799188207, sent to [{'identifier': '8799188207', 'type': 'sms'}]
+2025-05-07 18:39:19,327 - INFO - 200 POST /api/login (127.0.0.1) 1054.59ms
+2025-05-07 18:39:30,946 - INFO - 200 OPTIONS /api/login (127.0.0.1) 1.04ms
+2025-05-07 18:39:30,950 - DEBUG - Login attempt: identifier=varunshah314@gmail.com
+2025-05-07 18:39:30,951 - DEBUG - Query: SELECT * FROM users WHERE email = %s AND password = %s, Result: {'user_id': 31, 'username': 'Spiderman', 'email': 'varunshah314@gmail.com', 'password': '123456', 'birthday': datetime.date(2025, 4, 8), 'gender': 'MALE', 'phone': None, 'address': 'london', 'state': 'Gujarat', 'pincode': '391740', 'otp': None, 'otp_verified': 1}
+2025-05-07 18:39:30,951 - INFO - -- BEGIN Twilio API Request --
+2025-05-07 18:39:30,951 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-05-07 18:39:30,952 - INFO - Headers:
+2025-05-07 18:39:30,952 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-07 18:39:30,952 - INFO - Accept : application/json
+2025-05-07 18:39:30,952 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-07 18:39:30,952 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-07 18:39:30,952 - INFO - Accept-Charset : utf-8
+2025-05-07 18:39:30,952 - INFO - -- END Twilio API Request --
+2025-05-07 18:39:31,207 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 400 134
+2025-05-07 18:39:31,207 - INFO - Response Status Code: 400
+2025-05-07 18:39:31,208 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Wed, 07 May 2025 13:09:30 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ331a77afdd0ae34c556f80cc24556d2f', 'Twilio-Request-Duration': '0.023', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 c67710fc569d98c780039c17b3fc4eda.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': 'B6WB7UsqxjUVRQ-Jk0KqB0ZN4CDRLTFj7kBjgJkPbNVbhZqwBAFHYQ=='}
+2025-05-07 18:39:31,208 - ERROR - Twilio error sending OTP to varunshah314@gmail.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-07 18:39:31,208 - ERROR - Twilio error sending OTP: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-07 18:39:31,209 - ERROR - 503 POST /api/login (127.0.0.1) 261.03ms
+2025-05-07 18:41:11,201 - INFO - C:\xampp\htdocs\Internship\tripglide\backend\login.py modified; restarting server
+2025-05-07 18:41:12,897 - DEBUG - Starting authorization phase
+2025-05-07 18:41:12,897 - DEBUG - The provided initial strategy is mysql_native_password
+2025-05-07 18:41:12,898 - INFO - package: mysql.connector.plugins
+2025-05-07 18:41:12,898 - INFO - plugin_name: mysql_native_password
+2025-05-07 18:41:12,898 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-05-07 18:41:12,899 - DEBUG - mysql_native_password completed succesfully
+2025-05-07 18:41:12,899 - INFO - Database connection established
+2025-05-07 18:41:12,901 - INFO - Database tables initialized
+2025-05-07 18:41:12,902 - INFO - Twilio client initialized successfully
+2025-05-07 18:41:12,904 - INFO - Serving on http://0.0.0.0:5001
+2025-05-07 18:41:12,905 - DEBUG - Using selector: SelectSelector
+2025-05-07 18:41:12,925 - INFO - Start watching changes
+2025-05-07 18:41:12,925 - INFO - Start detecting changes
+2025-05-07 18:41:15,952 - INFO - C:\xampp\htdocs\Internship\tripglide\backend\login.py modified; restarting server
+2025-05-07 18:41:16,834 - DEBUG - Starting authorization phase
+2025-05-07 18:41:16,834 - DEBUG - The provided initial strategy is mysql_native_password
+2025-05-07 18:41:16,835 - INFO - package: mysql.connector.plugins
+2025-05-07 18:41:16,835 - INFO - plugin_name: mysql_native_password
+2025-05-07 18:41:16,835 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-05-07 18:41:16,836 - DEBUG - mysql_native_password completed succesfully
+2025-05-07 18:41:16,836 - INFO - Database connection established
+2025-05-07 18:41:16,837 - INFO - Database tables initialized
+2025-05-07 18:41:16,838 - INFO - Twilio client initialized successfully
+2025-05-07 18:41:16,841 - INFO - Serving on http://0.0.0.0:5001
+2025-05-07 18:41:16,841 - DEBUG - Using selector: SelectSelector
+2025-05-07 18:41:16,844 - INFO - Start watching changes
+2025-05-07 18:41:16,844 - INFO - Start detecting changes
+2025-05-07 18:41:36,404 - INFO - 200 OPTIONS /api/login (127.0.0.1) 1.00ms
+2025-05-07 18:41:36,408 - DEBUG - Login attempt: identifier=varunshah314@gmail.com
+2025-05-07 18:41:36,412 - DEBUG - Query: SELECT * FROM users WHERE email = %s AND password = %s, Result: {'user_id': 31, 'username': 'Spiderman', 'email': 'varunshah314@gmail.com', 'password': '123456', 'birthday': datetime.date(2025, 4, 8), 'gender': 'MALE', 'phone': None, 'address': 'london', 'state': 'Gujarat', 'pincode': '391740', 'otp': None, 'otp_verified': 1}
+2025-05-07 18:41:37,055 - INFO - -- BEGIN Twilio API Request --
+2025-05-07 18:41:37,055 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-05-07 18:41:37,055 - INFO - Headers:
+2025-05-07 18:41:37,055 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-07 18:41:37,055 - INFO - Accept : application/json
+2025-05-07 18:41:37,055 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-07 18:41:37,055 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-07 18:41:37,055 - INFO - Accept-Charset : utf-8
+2025-05-07 18:41:37,055 - INFO - -- END Twilio API Request --
+2025-05-07 18:41:37,057 - DEBUG - Starting new HTTPS connection (1): verify.twilio.com:443
+2025-05-07 18:41:37,404 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 400 134
+2025-05-07 18:41:37,404 - INFO - Response Status Code: 400
+2025-05-07 18:41:37,405 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Wed, 07 May 2025 13:11:36 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ69d547f0ffa2857ed41edc1c08791328', 'Twilio-Request-Duration': '0.026', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 f2ed20ce8c15acb95905bec6b556d148.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': 'fP9P5Vwz0Tk5unzY7uOPCu_MWiR-Rec7yfvCw608erkh5o7uLquyYQ=='}
+2025-05-07 18:41:37,405 - ERROR - Twilio error sending OTP to varunshah314@gmail.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-07 18:41:37,405 - ERROR - Twilio error sending OTP: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-07 18:41:37,406 - ERROR - 503 POST /api/login (127.0.0.1) 998.95ms
+2025-05-07 20:32:19,481 - INFO - 200 OPTIONS /api/login (127.0.0.1) 0.00ms
+2025-05-07 20:32:19,489 - DEBUG - Login attempt: identifier=varunshah314@gmail.com
+2025-05-07 20:32:19,489 - DEBUG - Query: SELECT * FROM users WHERE email = %s AND password = %s, Result: {'user_id': 31, 'username': 'Spiderman', 'email': 'varunshah314@gmail.com', 'password': '123456', 'birthday': datetime.date(2025, 4, 8), 'gender': 'MALE', 'phone': None, 'address': 'london', 'state': 'Gujarat', 'pincode': '391740', 'otp': None, 'otp_verified': 1}
+2025-05-07 20:32:19,489 - INFO - -- BEGIN Twilio API Request --
+2025-05-07 20:32:19,489 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-05-07 20:32:19,489 - INFO - Headers:
+2025-05-07 20:32:19,489 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-07 20:32:19,489 - INFO - Accept : application/json
+2025-05-07 20:32:19,489 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-07 20:32:19,489 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-07 20:32:19,489 - INFO - Accept-Charset : utf-8
+2025-05-07 20:32:19,489 - INFO - -- END Twilio API Request --
+2025-05-07 20:32:19,489 - DEBUG - Resetting dropped connection: verify.twilio.com
+2025-05-07 20:32:19,831 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 400 134
+2025-05-07 20:32:19,831 - INFO - Response Status Code: 400
+2025-05-07 20:32:19,831 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Wed, 07 May 2025 15:02:19 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ53fa187c7ffea24995ad86d416d9f6bb', 'Twilio-Request-Duration': '0.026', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 d4d75f5dff4588f99d1023e929dae58e.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': 'VcVVb21rLa_OEcaqbp6w5wTLUjpXM5LnQqfOe3BE4PZDxaB59TvNcg=='}
+2025-05-07 20:32:19,831 - ERROR - Twilio error sending OTP to varunshah314@gmail.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-07 20:32:19,833 - ERROR - Twilio error sending OTP: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-07 20:32:19,834 - ERROR - 503 POST /api/login (127.0.0.1) 347.09ms
+2025-05-10 12:29:07,216 - DEBUG - Starting authorization phase
+2025-05-10 12:29:07,216 - DEBUG - The provided initial strategy is mysql_native_password
+2025-05-10 12:29:07,216 - INFO - package: mysql.connector.plugins
+2025-05-10 12:29:07,216 - INFO - plugin_name: mysql_native_password
+2025-05-10 12:29:07,216 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-05-10 12:29:07,231 - DEBUG - mysql_native_password completed succesfully
+2025-05-10 12:29:07,231 - INFO - Database connection established
+2025-05-10 12:29:07,247 - INFO - Database tables initialized
+2025-05-10 12:29:07,247 - INFO - Twilio client initialized successfully
+2025-05-10 12:29:07,247 - INFO - Serving on http://0.0.0.0:5001
+2025-05-10 12:29:07,247 - DEBUG - Using selector: SelectSelector
+2025-05-10 12:29:07,267 - INFO - Start watching changes
+2025-05-10 12:29:07,268 - INFO - Start detecting changes
+2025-05-10 12:29:51,505 - INFO - 200 OPTIONS /api/login (127.0.0.1) 1.07ms
+2025-05-10 12:29:51,513 - DEBUG - Login attempt: identifier=8799188207
+2025-05-10 12:29:51,618 - DEBUG - Query: SELECT * FROM users WHERE phone = %s AND password = %s, Result: {'user_id': 27, 'username': 'varun.in', 'email': 'quizzicalbassi1@freethecookies.com', 'password': '123456', 'birthday': datetime.date(2019, 1, 1), 'gender': 'MALE', 'phone': '8799188207', 'address': 'paris', 'state': 'Gujarat', 'pincode': '391740', 'otp': None, 'otp_verified': 1}
+2025-05-10 12:29:51,925 - INFO - -- BEGIN Twilio API Request --
+2025-05-10 12:29:51,927 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-05-10 12:29:51,927 - INFO - Headers:
+2025-05-10 12:29:51,927 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-10 12:29:51,927 - INFO - Accept : application/json
+2025-05-10 12:29:51,927 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-10 12:29:51,927 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-10 12:29:51,927 - INFO - Accept-Charset : utf-8
+2025-05-10 12:29:51,927 - INFO - -- END Twilio API Request --
+2025-05-10 12:29:51,931 - DEBUG - Starting new HTTPS connection (1): verify.twilio.com:443
+2025-05-10 12:29:52,791 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 201 634
+2025-05-10 12:29:52,793 - INFO - Response Status Code: 201
+2025-05-10 12:29:52,793 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '634', 'Connection': 'keep-alive', 'Date': 'Sat, 10 May 2025 06:59:52 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ131d26df1756af17b331968fb472455b', 'Twilio-Request-Duration': '0.187', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 09c898c8a33d01a016155da981c1c9d6.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': 'HsHWSg0_Be_Rt9i9FdWVy_ou18IoZyXwH6jFZe3dNBESVXPzSO5JyQ=='}
+2025-05-10 12:29:52,813 - INFO - Verification sent to 8799188207 via sms: VE1222c0ae12efd7301d10f86f9b4e8b5b
+2025-05-10 12:29:52,815 - INFO - -- BEGIN Twilio API Request --
+2025-05-10 12:29:52,815 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-05-10 12:29:52,815 - INFO - Headers:
+2025-05-10 12:29:52,815 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-10 12:29:52,815 - INFO - Accept : application/json
+2025-05-10 12:29:52,817 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-10 12:29:52,817 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-10 12:29:52,817 - INFO - Accept-Charset : utf-8
+2025-05-10 12:29:52,817 - INFO - -- END Twilio API Request --
+2025-05-10 12:29:53,488 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 400 134
+2025-05-10 12:29:53,488 - INFO - Response Status Code: 400
+2025-05-10 12:29:53,488 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Sat, 10 May 2025 06:59:53 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQd2e95c380cd98c1f5ae7e72bb5303bf7', 'Twilio-Request-Duration': '0.022', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 09c898c8a33d01a016155da981c1c9d6.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': 'u_XUb2EZFFUZEV2PCP2xxZc0MHKJc-Dpl8BIprq6J1KuIk21sqV1jg=='}
+2025-05-10 12:29:53,490 - ERROR - Twilio error sending OTP to quizzicalbassi1@freethecookies.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-10 12:29:53,490 - WARNING - Failed to send email OTP to quizzicalbassi1@freethecookies.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-10 12:29:53,490 - INFO - Login pending OTP: phone=8799188207, sent to [{'identifier': '8799188207', 'type': 'sms'}]
+2025-05-10 12:29:53,492 - INFO - 200 POST /api/login (127.0.0.1) 1982.76ms
+2025-05-10 12:30:11,256 - INFO - 200 OPTIONS /api/verify_code (127.0.0.1) 9.65ms
+2025-05-10 12:30:11,478 - INFO - -- BEGIN Twilio API Request --
+2025-05-10 12:30:11,478 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/VerificationCheck
+2025-05-10 12:30:11,484 - INFO - Headers:
+2025-05-10 12:30:11,484 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-10 12:30:11,484 - INFO - Accept : application/json
+2025-05-10 12:30:11,484 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-10 12:30:11,484 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-10 12:30:11,484 - INFO - Accept-Charset : utf-8
+2025-05-10 12:30:11,484 - INFO - -- END Twilio API Request --
+2025-05-10 12:30:11,801 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/VerificationCheck HTTP/1.1" 200 340
+2025-05-10 12:30:11,805 - INFO - Response Status Code: 200
+2025-05-10 12:30:11,805 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '340', 'Connection': 'keep-alive', 'Date': 'Sat, 10 May 2025 07:00:11 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ105a24e2900b287c22b7cbf7ae57cd25', 'Twilio-Request-Duration': '0.035', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 09c898c8a33d01a016155da981c1c9d6.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': 'pN6_mpcB-D9fLE4C5hSaFHGBxC2eQKgIDQjAAkk-R3JeDy1Pzv8A6w=='}
+2025-05-10 12:30:11,805 - INFO - Verification check for 8799188207: approved
+2025-05-10 12:30:11,809 - INFO - phone verified for 8799188207
+2025-05-10 12:30:11,809 - INFO - 200 POST /api/verify_code (127.0.0.1) 331.41ms
+2025-05-10 12:30:12,064 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-10 12:30:12,072 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 15.83ms
+2025-05-10 12:30:12,080 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-10 12:30:12,087 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 12.39ms
+2025-05-10 12:30:27,158 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-10 12:30:27,158 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 8.34ms
+2025-05-10 12:30:27,173 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-10 12:30:27,178 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 10.35ms
+2025-05-10 12:31:47,077 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-10 12:31:47,077 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 8.49ms
+2025-05-10 12:31:47,090 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-10 12:31:47,090 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 4.01ms
+2025-05-10 12:52:09,921 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-10 12:52:09,926 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 7.78ms
+2025-05-10 12:52:09,932 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-10 12:52:09,940 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 6.22ms
+2025-05-16 16:12:40,204 - ERROR - Failed to connect to database: 2002: Can't connect to local MySQL server through socket '%-.100s' (%s) (Warning: not all arguments converted during string formatting)
+2025-05-16 16:12:40,215 - INFO - Twilio client initialized successfully
+2025-05-16 16:12:40,220 - INFO - Serving on http://0.0.0.0:5001
+2025-05-16 16:12:40,223 - DEBUG - Using selector: SelectSelector
+2025-05-16 16:12:40,236 - INFO - Start watching changes
+2025-05-16 16:12:40,236 - INFO - Start detecting changes
+2025-05-16 16:15:15,524 - ERROR - Failed to connect to database: 2002: Can't connect to local MySQL server through socket '%-.100s' (%s) (Warning: not all arguments converted during string formatting)
+2025-05-16 16:15:15,526 - INFO - Twilio client initialized successfully
+2025-05-16 16:15:15,530 - INFO - Serving on http://0.0.0.0:5001
+2025-05-16 16:15:15,531 - DEBUG - Using selector: SelectSelector
+2025-05-16 16:15:15,538 - INFO - Start watching changes
+2025-05-16 16:15:15,538 - INFO - Start detecting changes
+2025-05-16 16:16:25,813 - WARNING - Database connection lost, attempting to reconnect
+2025-05-16 16:16:25,813 - DEBUG - Starting authorization phase
+2025-05-16 16:16:25,813 - DEBUG - The provided initial strategy is mysql_native_password
+2025-05-16 16:16:25,821 - INFO - package: mysql.connector.plugins
+2025-05-16 16:16:25,821 - INFO - plugin_name: mysql_native_password
+2025-05-16 16:16:25,823 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-05-16 16:16:25,823 - DEBUG - mysql_native_password completed succesfully
+2025-05-16 16:16:25,830 - INFO - Database connection established
+2025-05-16 16:16:25,863 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-16 16:16:25,863 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 58.31ms
+2025-05-16 16:16:25,879 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-16 16:16:25,879 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 8.32ms
+2025-05-16 16:18:22,793 - INFO - 200 OPTIONS /api/login (127.0.0.1) 0.00ms
+2025-05-16 16:18:22,801 - DEBUG - Login attempt: identifier=8799188207
+2025-05-16 16:18:22,818 - DEBUG - Query: SELECT * FROM users WHERE phone = %s AND password = %s, Result: {'user_id': 27, 'username': 'varun.in', 'email': 'quizzicalbassi1@freethecookies.com', 'password': '123456', 'birthday': datetime.date(2019, 1, 1), 'gender': 'MALE', 'phone': '8799188207', 'address': 'paris', 'state': 'Gujarat', 'pincode': '391740', 'otp': None, 'otp_verified': 1}
+2025-05-16 16:18:23,084 - INFO - -- BEGIN Twilio API Request --
+2025-05-16 16:18:23,084 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-05-16 16:18:23,084 - INFO - Headers:
+2025-05-16 16:18:23,084 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-16 16:18:23,084 - INFO - Accept : application/json
+2025-05-16 16:18:23,092 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-16 16:18:23,092 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-16 16:18:23,093 - INFO - Accept-Charset : utf-8
+2025-05-16 16:18:23,093 - INFO - -- END Twilio API Request --
+2025-05-16 16:18:23,096 - DEBUG - Starting new HTTPS connection (1): verify.twilio.com:443
+2025-05-16 16:18:24,029 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 201 634
+2025-05-16 16:18:24,029 - INFO - Response Status Code: 201
+2025-05-16 16:18:24,029 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '634', 'Connection': 'keep-alive', 'Date': 'Fri, 16 May 2025 10:48:24 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQddd211db9a1326a20d9b7bb9128ebe3c', 'Twilio-Request-Duration': '0.187', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 8a4ad7a380f44490867006729a8f8656.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': '6xinNmsgVfaf5Iyh9noDw0lD3aIgr3aO_Bt4f4SjlssJSeqi3YPPZA=='}
+2025-05-16 16:18:24,047 - INFO - Verification sent to 8799188207 via sms: VE6992d11de36f736e2b54e0f101af8d73
+2025-05-16 16:18:24,047 - INFO - -- BEGIN Twilio API Request --
+2025-05-16 16:18:24,047 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-05-16 16:18:24,047 - INFO - Headers:
+2025-05-16 16:18:24,047 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-16 16:18:24,047 - INFO - Accept : application/json
+2025-05-16 16:18:24,047 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-16 16:18:24,047 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-16 16:18:24,047 - INFO - Accept-Charset : utf-8
+2025-05-16 16:18:24,047 - INFO - -- END Twilio API Request --
+2025-05-16 16:18:25,010 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 400 134
+2025-05-16 16:18:25,010 - INFO - Response Status Code: 400
+2025-05-16 16:18:25,010 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Fri, 16 May 2025 10:48:24 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ850bfa12c2c116daf341f2e5ee684c9e', 'Twilio-Request-Duration': '0.021', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 8a4ad7a380f44490867006729a8f8656.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': 'wMxvnOEDklvFCOdK82YwRyjPzpXH4ISoFCo82pgGkIgGfPvvx0tgbA=='}
+2025-05-16 16:18:25,010 - ERROR - Twilio error sending OTP to quizzicalbassi1@freethecookies.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-16 16:18:25,010 - WARNING - Failed to send email OTP to quizzicalbassi1@freethecookies.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-16 16:18:25,010 - INFO - Login pending OTP: phone=8799188207, sent to [{'identifier': '8799188207', 'type': 'sms'}]
+2025-05-16 16:18:25,016 - INFO - 200 POST /api/login (127.0.0.1) 2214.94ms
+2025-05-16 16:18:46,291 - INFO - 200 OPTIONS /api/verify_code (127.0.0.1) 0.00ms
+2025-05-16 16:18:46,301 - INFO - -- BEGIN Twilio API Request --
+2025-05-16 16:18:46,301 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/VerificationCheck
+2025-05-16 16:18:46,301 - INFO - Headers:
+2025-05-16 16:18:46,301 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-16 16:18:46,301 - INFO - Accept : application/json
+2025-05-16 16:18:46,301 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-16 16:18:46,301 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-16 16:18:46,301 - INFO - Accept-Charset : utf-8
+2025-05-16 16:18:46,305 - INFO - -- END Twilio API Request --
+2025-05-16 16:18:46,890 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/VerificationCheck HTTP/1.1" 200 340
+2025-05-16 16:18:46,890 - INFO - Response Status Code: 200
+2025-05-16 16:18:46,890 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '340', 'Connection': 'keep-alive', 'Date': 'Fri, 16 May 2025 10:48:46 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ0d764d3eaf9434fe20e83125dc72963a', 'Twilio-Request-Duration': '0.033', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 8a4ad7a380f44490867006729a8f8656.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': 'nsetjpcOi_XTskypYyp1EjGTJ5dd9lhupmDKTdC2qhWJT3vyX29LCw=='}
+2025-05-16 16:18:46,892 - INFO - Verification check for 8799188207: approved
+2025-05-16 16:18:46,893 - INFO - phone verified for 8799188207
+2025-05-16 16:18:46,893 - INFO - 200 POST /api/verify_code (127.0.0.1) 593.29ms
+2025-05-16 16:18:47,106 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-16 16:18:47,107 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 10.29ms
+2025-05-16 16:18:47,121 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-16 16:18:47,126 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 10.42ms
+2025-05-16 16:19:02,704 - INFO - 200 OPTIONS /api/login (127.0.0.1) 5.92ms
+2025-05-16 16:19:02,704 - DEBUG - Login attempt: identifier=varun.21beitv139@gmail.com
+2025-05-16 16:19:02,712 - DEBUG - Query: SELECT * FROM users WHERE email = %s AND password = %s, Result: {'user_id': 29, 'username': 'The vone', 'email': 'varun.21beitv139@gmail.com', 'password': '123456', 'birthday': datetime.date(2025, 4, 1), 'gender': 'MALE', 'phone': None, 'address': 'gaziyabad', 'state': 'Madhya Pradesh', 'pincode': '391740', 'otp': None, 'otp_verified': 1}
+2025-05-16 16:19:02,712 - INFO - -- BEGIN Twilio API Request --
+2025-05-16 16:19:02,712 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-05-16 16:19:02,712 - INFO - Headers:
+2025-05-16 16:19:02,712 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-16 16:19:02,712 - INFO - Accept : application/json
+2025-05-16 16:19:02,712 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-16 16:19:02,712 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-16 16:19:02,712 - INFO - Accept-Charset : utf-8
+2025-05-16 16:19:02,712 - INFO - -- END Twilio API Request --
+2025-05-16 16:19:03,139 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 400 134
+2025-05-16 16:19:03,139 - INFO - Response Status Code: 400
+2025-05-16 16:19:03,139 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Fri, 16 May 2025 10:49:03 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQa1c8a605a4ac4d4ba603eb65b22db22a', 'Twilio-Request-Duration': '0.042', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 8a4ad7a380f44490867006729a8f8656.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': 'ErxmM-CWkz-cSuXl0V_czhUFFCuHGwbLWIzc17TXpDhwFJwT7p0-Ww=='}
+2025-05-16 16:19:03,139 - ERROR - Twilio error sending OTP to varun.21beitv139@gmail.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-16 16:19:03,139 - ERROR - Twilio error sending OTP: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-16 16:19:03,139 - ERROR - 503 POST /api/login (127.0.0.1) 435.10ms
+2025-05-16 16:19:39,435 - INFO - 200 OPTIONS /api/signup (127.0.0.1) 2.19ms
+2025-05-16 16:19:39,447 - WARNING - 409 POST /api/signup (127.0.0.1) 9.34ms
+2025-05-16 16:19:51,839 - INFO - 200 OPTIONS /api/signup (127.0.0.1) 0.00ms
+2025-05-16 16:19:51,864 - INFO - User signed up: phone=9428429508
+2025-05-16 16:19:51,874 - INFO - 201 POST /api/signup (127.0.0.1) 25.41ms
+2025-05-16 16:20:05,684 - INFO - 200 OPTIONS /api/login (127.0.0.1) 0.00ms
+2025-05-16 16:20:05,692 - DEBUG - Login attempt: identifier=9428429508
+2025-05-16 16:20:05,692 - DEBUG - Query: SELECT * FROM users WHERE phone = %s AND password = %s, Result: {'user_id': 32, 'username': 'NewUser', 'email': '', 'password': '123456', 'birthday': None, 'gender': 'Unknown', 'phone': '9428429508', 'address': None, 'state': None, 'pincode': None, 'otp': None, 'otp_verified': 0}
+2025-05-16 16:20:05,692 - INFO - -- BEGIN Twilio API Request --
+2025-05-16 16:20:05,701 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-05-16 16:20:05,701 - INFO - Headers:
+2025-05-16 16:20:05,701 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-16 16:20:05,701 - INFO - Accept : application/json
+2025-05-16 16:20:05,701 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-16 16:20:05,701 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-16 16:20:05,701 - INFO - Accept-Charset : utf-8
+2025-05-16 16:20:05,701 - INFO - -- END Twilio API Request --
+2025-05-16 16:20:06,127 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 403 252
+2025-05-16 16:20:06,128 - INFO - Response Status Code: 403
+2025-05-16 16:20:06,128 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '252', 'Connection': 'keep-alive', 'Date': 'Fri, 16 May 2025 10:50:06 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ765e199c43966607786a205f35323e83', 'Twilio-Request-Duration': '0.026', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 8a4ad7a380f44490867006729a8f8656.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': 'KwVGlr__VuXX32U-6H-cgHfwJDOKZmsFQT4WBjvezweffmNPulRAeg=='}
+2025-05-16 16:20:06,128 - ERROR - Twilio error sending OTP to 9428429508: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: The phone number is unverified. Trial accounts cannot send messages to unverified numbers; verify it at twilio.com/user/account/phone-numbers/verified[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/21608[0m
+
+
+2025-05-16 16:20:06,128 - ERROR - Twilio error sending OTP: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: The phone number is unverified. Trial accounts cannot send messages to unverified numbers; verify it at twilio.com/user/account/phone-numbers/verified[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/21608[0m
+
+
+2025-05-16 16:20:06,128 - ERROR - 503 POST /api/login (127.0.0.1) 435.98ms
+2025-05-16 16:20:21,427 - INFO - 200 OPTIONS /api/login (127.0.0.1) 2.02ms
+2025-05-16 16:20:21,432 - DEBUG - Login attempt: identifier=8799188207
+2025-05-16 16:20:21,439 - DEBUG - Query: SELECT * FROM users WHERE phone = %s AND password = %s, Result: {'user_id': 27, 'username': 'varun.in', 'email': 'quizzicalbassi1@freethecookies.com', 'password': '123456', 'birthday': datetime.date(2019, 1, 1), 'gender': 'MALE', 'phone': '8799188207', 'address': 'paris', 'state': 'Gujarat', 'pincode': '391740', 'otp': None, 'otp_verified': 1}
+2025-05-16 16:20:21,440 - INFO - -- BEGIN Twilio API Request --
+2025-05-16 16:20:21,440 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-05-16 16:20:21,440 - INFO - Headers:
+2025-05-16 16:20:21,440 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-16 16:20:21,440 - INFO - Accept : application/json
+2025-05-16 16:20:21,440 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-16 16:20:21,440 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-16 16:20:21,440 - INFO - Accept-Charset : utf-8
+2025-05-16 16:20:21,442 - INFO - -- END Twilio API Request --
+2025-05-16 16:20:21,984 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 201 634
+2025-05-16 16:20:21,984 - INFO - Response Status Code: 201
+2025-05-16 16:20:21,984 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '634', 'Connection': 'keep-alive', 'Date': 'Fri, 16 May 2025 10:50:22 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQf91da6fbf269e68a087bafe31b36e30a', 'Twilio-Request-Duration': '0.154', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 8a4ad7a380f44490867006729a8f8656.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': 'oKYQ6GZJOZs2CJOaInIpblK3V3zR1MZvo9qrgO5HJqtD9GzYwKvL5A=='}
+2025-05-16 16:20:21,984 - INFO - Verification sent to 8799188207 via sms: VEfcceace543c68f6065c317c64bc0a554
+2025-05-16 16:20:21,984 - INFO - -- BEGIN Twilio API Request --
+2025-05-16 16:20:21,984 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-05-16 16:20:21,984 - INFO - Headers:
+2025-05-16 16:20:21,984 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-16 16:20:21,984 - INFO - Accept : application/json
+2025-05-16 16:20:21,984 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-16 16:20:21,984 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-16 16:20:21,984 - INFO - Accept-Charset : utf-8
+2025-05-16 16:20:21,984 - INFO - -- END Twilio API Request --
+2025-05-16 16:20:22,687 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 400 134
+2025-05-16 16:20:22,687 - INFO - Response Status Code: 400
+2025-05-16 16:20:22,687 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Fri, 16 May 2025 10:50:22 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ19db46f73a41d76a90da8c63e8d95f8f', 'Twilio-Request-Duration': '0.020', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 8a4ad7a380f44490867006729a8f8656.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': 'zL9FTXat-uVTw6PawBYbCnQ9f_M-20Mb-eEJMvLTqWMh7Fkr3XM0nA=='}
+2025-05-16 16:20:22,687 - ERROR - Twilio error sending OTP to quizzicalbassi1@freethecookies.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-16 16:20:22,687 - WARNING - Failed to send email OTP to quizzicalbassi1@freethecookies.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-05-16 16:20:22,687 - INFO - Login pending OTP: phone=8799188207, sent to [{'identifier': '8799188207', 'type': 'sms'}]
+2025-05-16 16:20:22,687 - INFO - 200 POST /api/login (127.0.0.1) 1254.91ms
+2025-05-16 16:20:44,756 - INFO - 200 OPTIONS /api/verify_code (127.0.0.1) 8.33ms
+2025-05-16 16:20:44,765 - INFO - -- BEGIN Twilio API Request --
+2025-05-16 16:20:44,765 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/VerificationCheck
+2025-05-16 16:20:44,765 - INFO - Headers:
+2025-05-16 16:20:44,765 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-05-16 16:20:44,765 - INFO - Accept : application/json
+2025-05-16 16:20:44,765 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-05-16 16:20:44,765 - INFO - X-Twilio-Client : python-9.5.2
+2025-05-16 16:20:44,765 - INFO - Accept-Charset : utf-8
+2025-05-16 16:20:44,765 - INFO - -- END Twilio API Request --
+2025-05-16 16:20:45,140 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/VerificationCheck HTTP/1.1" 200 340
+2025-05-16 16:20:45,140 - INFO - Response Status Code: 200
+2025-05-16 16:20:45,140 - INFO - Response Headers: {'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '340', 'Connection': 'keep-alive', 'Date': 'Fri, 16 May 2025 10:50:45 GMT', 'X-API-Domain': 'verify.twilio.com', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ1497ec61da5430c2a4b79f9a6db2f1ba', 'Twilio-Request-Duration': '0.034', 'Twilio-Concurrent-Requests': '1', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 8a4ad7a380f44490867006729a8f8656.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P11', 'X-Amz-Cf-Id': '2RdAWHf07TPdJaNGOPzQvbU3tfv-dpfNAXflFiSod13wDlMNsPjdCA=='}
+2025-05-16 16:20:45,140 - INFO - Verification check for 8799188207: approved
+2025-05-16 16:20:45,148 - INFO - phone verified for 8799188207
+2025-05-16 16:20:45,148 - INFO - 200 POST /api/verify_code (127.0.0.1) 391.56ms
+2025-05-16 16:20:45,371 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-16 16:20:45,371 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 8.07ms
+2025-05-16 16:20:45,384 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-16 16:20:45,387 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 6.63ms
+2025-05-16 16:23:03,168 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-16 16:23:03,169 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 4.67ms
+2025-05-16 16:23:03,174 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-05-16 16:23:03,178 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 4.07ms
+2025-06-05 23:45:37,278 - DEBUG - Starting authorization phase
+2025-06-05 23:45:37,280 - DEBUG - The provided initial strategy is mysql_native_password
+2025-06-05 23:45:37,280 - INFO - package: mysql.connector.plugins
+2025-06-05 23:45:37,280 - INFO - plugin_name: mysql_native_password
+2025-06-05 23:45:37,280 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-06-05 23:45:37,287 - DEBUG - mysql_native_password completed succesfully
+2025-06-05 23:45:37,290 - INFO - Database connection established
+2025-06-05 23:45:37,295 - INFO - Database tables initialized
+2025-06-05 23:45:37,297 - INFO - Twilio client initialized successfully
+2025-06-05 23:45:37,299 - INFO - Serving on http://0.0.0.0:5001
+2025-06-05 23:45:37,299 - DEBUG - Using selector: SelectSelector
+2025-06-05 23:45:37,304 - INFO - Start watching changes
+2025-06-05 23:45:37,304 - INFO - Start detecting changes
+2025-06-05 23:46:25,768 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-06-05 23:46:25,771 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 20.09ms
+2025-06-05 23:46:25,783 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-06-05 23:46:25,784 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 8.50ms
+2025-06-05 23:47:32,104 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-06-05 23:47:32,106 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 6.98ms
+2025-06-05 23:47:32,113 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-06-05 23:47:32,114 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 6.13ms
+2025-06-06 00:10:49,436 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-06-06 00:10:49,441 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 27.63ms
+2025-06-06 00:10:49,446 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-06-06 00:10:49,447 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 3.62ms
+2025-07-16 15:20:58,893 - DEBUG - Starting authorization phase
+2025-07-16 15:20:58,902 - DEBUG - The provided initial strategy is mysql_native_password
+2025-07-16 15:20:58,902 - INFO - package: mysql.connector.plugins
+2025-07-16 15:20:58,902 - INFO - plugin_name: mysql_native_password
+2025-07-16 15:20:58,902 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-07-16 15:20:58,910 - DEBUG - mysql_native_password completed succesfully
+2025-07-16 15:20:58,910 - INFO - Database connection established
+2025-07-16 15:20:58,918 - INFO - Database tables initialized
+2025-07-16 15:20:58,934 - INFO - Twilio client initialized successfully
+2025-07-16 15:20:58,934 - INFO - Serving on http://0.0.0.0:5001
+2025-07-16 15:20:58,934 - DEBUG - Using selector: SelectSelector
+2025-07-16 15:20:58,934 - INFO - Start watching changes
+2025-07-16 15:20:58,934 - INFO - Start detecting changes
+2025-07-16 15:22:00,229 - INFO - 200 OPTIONS /api/login (127.0.0.1) 8.80ms
+2025-07-16 15:22:00,238 - DEBUG - Login attempt: identifier=8799188207
+2025-07-16 15:22:00,265 - DEBUG - Query: SELECT * FROM users WHERE phone = %s AND password = %s, Result: None
+2025-07-16 15:22:00,271 - WARNING - 401 POST /api/login (127.0.0.1) 32.16ms
+2025-07-16 15:23:58,210 - INFO - 200 OPTIONS /api/login (127.0.0.1) 1.47ms
+2025-07-16 15:23:58,212 - DEBUG - Login attempt: identifier=8799188207
+2025-07-16 15:23:58,215 - DEBUG - Query: SELECT * FROM users WHERE phone = %s AND password = %s, Result: {'user_id': 27, 'username': 'varun.in', 'email': 'quizzicalbassi1@freethecookies.com', 'password': '123456', 'birthday': datetime.date(2019, 1, 1), 'gender': 'MALE', 'phone': '8799188207', 'address': 'paris', 'state': 'Gujarat', 'pincode': '391740', 'otp': None, 'otp_verified': 1}
+2025-07-16 15:23:58,364 - INFO - -- BEGIN Twilio API Request --
+2025-07-16 15:23:58,364 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-07-16 15:23:58,364 - INFO - Headers:
+2025-07-16 15:23:58,364 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-07-16 15:23:58,364 - INFO - Accept : application/json
+2025-07-16 15:23:58,364 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-07-16 15:23:58,364 - INFO - X-Twilio-Client : python-9.5.2
+2025-07-16 15:23:58,364 - INFO - Accept-Charset : utf-8
+2025-07-16 15:23:58,364 - INFO - -- END Twilio API Request --
+2025-07-16 15:23:58,364 - DEBUG - Starting new HTTPS connection (1): verify.twilio.com:443
+2025-07-16 15:23:59,374 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 201 634
+2025-07-16 15:23:59,382 - INFO - Response Status Code: 201
+2025-07-16 15:23:59,382 - INFO - Response Headers: {'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '634', 'Connection': 'keep-alive', 'Date': 'Wed, 16 Jul 2025 09:53:56 GMT', 'Twilio-Concurrent-Requests': '1', 'Twilio-Request-Id': 'RQbf369b19cf374f4df1a5aec718645899', 'Twilio-Request-Duration': '0.261', 'X-Home-Region': 'us1', 'X-API-Domain': 'verify.twilio.com', 'Strict-Transport-Security': 'max-age=31536000', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 1246c2d7ac851c7a4e499ad47094f678.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': 'UybU1kOIZOeewBR7TYPW659Pq_33P1MVt2jxeG6ll-MD9o6MqWDt-Q==', 'X-Powered-By': 'AT-5000', 'X-Shenanigans': 'none', 'Vary': 'Origin'}
+2025-07-16 15:23:59,383 - INFO - Verification sent to 8799188207 via sms: VE3a14497761084d4d664dc2bb9b4f8a38
+2025-07-16 15:23:59,383 - INFO - -- BEGIN Twilio API Request --
+2025-07-16 15:23:59,383 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-07-16 15:23:59,383 - INFO - Headers:
+2025-07-16 15:23:59,383 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-07-16 15:23:59,383 - INFO - Accept : application/json
+2025-07-16 15:23:59,383 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-07-16 15:23:59,383 - INFO - X-Twilio-Client : python-9.5.2
+2025-07-16 15:23:59,383 - INFO - Accept-Charset : utf-8
+2025-07-16 15:23:59,383 - INFO - -- END Twilio API Request --
+2025-07-16 15:23:59,687 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 400 127
+2025-07-16 15:23:59,687 - INFO - Response Status Code: 400
+2025-07-16 15:23:59,687 - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '127', 'Connection': 'keep-alive', 'Date': 'Wed, 16 Jul 2025 09:53:56 GMT', 'X-Twilio-Error-Code': '60223', 'Twilio-Concurrent-Requests': '1', 'Twilio-Request-Id': 'RQ86df37c781ab528133a05f3e6b1c311a', 'Twilio-Request-Duration': '0.030', 'X-Home-Region': 'us1', 'X-API-Domain': 'verify.twilio.com', 'Strict-Transport-Security': 'max-age=31536000', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 1246c2d7ac851c7a4e499ad47094f678.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': '9AZ5fVgFv1TFd7lQuBolUpih9v3wirkJdDJPbFOzmazzg6KkKyHptw==', 'X-Powered-By': 'AT-5000', 'X-Shenanigans': 'none', 'Vary': 'Origin'}
+2025-07-16 15:23:59,687 - ERROR - Twilio error sending OTP to quizzicalbassi1@freethecookies.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-07-16 15:23:59,687 - WARNING - Failed to send email OTP to quizzicalbassi1@freethecookies.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-07-16 15:23:59,687 - INFO - Login pending OTP: phone=8799188207, sent to [{'identifier': '8799188207', 'type': 'sms'}]
+2025-07-16 15:23:59,687 - INFO - 200 POST /api/login (127.0.0.1) 1474.79ms
+2025-07-16 15:24:19,202 - INFO - 200 OPTIONS /api/verify_code (127.0.0.1) 0.00ms
+2025-07-16 15:24:19,205 - INFO - -- BEGIN Twilio API Request --
+2025-07-16 15:24:19,205 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/VerificationCheck
+2025-07-16 15:24:19,205 - INFO - Headers:
+2025-07-16 15:24:19,205 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-07-16 15:24:19,205 - INFO - Accept : application/json
+2025-07-16 15:24:19,205 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-07-16 15:24:19,205 - INFO - X-Twilio-Client : python-9.5.2
+2025-07-16 15:24:19,205 - INFO - Accept-Charset : utf-8
+2025-07-16 15:24:19,210 - INFO - -- END Twilio API Request --
+2025-07-16 15:24:20,089 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/VerificationCheck HTTP/1.1" 200 340
+2025-07-16 15:24:20,089 - INFO - Response Status Code: 200
+2025-07-16 15:24:20,089 - INFO - Response Headers: {'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '340', 'Connection': 'keep-alive', 'Date': 'Wed, 16 Jul 2025 09:54:17 GMT', 'Twilio-Concurrent-Requests': '1', 'Twilio-Request-Id': 'RQb1a9b00c89f0a80acefcd8f08ac32b52', 'Twilio-Request-Duration': '0.048', 'X-Home-Region': 'us1', 'X-API-Domain': 'verify.twilio.com', 'Strict-Transport-Security': 'max-age=31536000', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 1246c2d7ac851c7a4e499ad47094f678.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': 'BxRN7c97xR-woKES_GmN4CY7584jbOIQMAFB7qETnphkg5WXqXlxTw==', 'X-Powered-By': 'AT-5000', 'X-Shenanigans': 'none', 'Vary': 'Origin'}
+2025-07-16 15:24:20,089 - INFO - Verification check for 8799188207: approved
+2025-07-16 15:24:20,093 - INFO - phone verified for 8799188207
+2025-07-16 15:24:20,093 - INFO - 200 POST /api/verify_code (127.0.0.1) 888.03ms
+2025-07-16 15:24:20,162 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-07-16 15:24:20,162 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 0.00ms
+2025-07-16 15:24:20,172 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-07-16 15:24:20,174 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 3.87ms
+2025-07-16 15:26:54,863 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-07-16 15:26:54,865 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 6.65ms
+2025-07-16 15:26:54,867 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-07-16 15:26:54,867 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 0.00ms
+2025-07-16 15:34:09,323 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-07-16 15:34:09,323 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 7.75ms
+2025-07-16 15:34:09,332 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-07-16 15:34:09,335 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 7.58ms
+2025-07-16 15:34:48,876 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-07-16 15:34:48,878 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 3.86ms
+2025-07-16 15:34:48,880 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-07-16 15:34:48,880 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 1.58ms
+2025-07-16 15:37:07,550 - INFO - 200 OPTIONS /api/login (127.0.0.1) 2.54ms
+2025-07-16 15:37:07,552 - DEBUG - Login attempt: identifier=8799188207
+2025-07-16 15:37:07,552 - DEBUG - Query: SELECT * FROM users WHERE phone = %s AND password = %s, Result: {'user_id': 27, 'username': 'varun.in', 'email': 'quizzicalbassi1@freethecookies.com', 'password': '123456', 'birthday': datetime.date(2019, 1, 1), 'gender': 'MALE', 'phone': '8799188207', 'address': 'paris', 'state': 'Gujarat', 'pincode': '391740', 'otp': None, 'otp_verified': 1}
+2025-07-16 15:37:07,552 - INFO - -- BEGIN Twilio API Request --
+2025-07-16 15:37:07,552 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-07-16 15:37:07,552 - INFO - Headers:
+2025-07-16 15:37:07,552 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-07-16 15:37:07,552 - INFO - Accept : application/json
+2025-07-16 15:37:07,552 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-07-16 15:37:07,552 - INFO - X-Twilio-Client : python-9.5.2
+2025-07-16 15:37:07,552 - INFO - Accept-Charset : utf-8
+2025-07-16 15:37:07,552 - INFO - -- END Twilio API Request --
+2025-07-16 15:37:07,557 - DEBUG - Resetting dropped connection: verify.twilio.com
+2025-07-16 15:37:08,508 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 201 634
+2025-07-16 15:37:08,508 - INFO - Response Status Code: 201
+2025-07-16 15:37:08,508 - INFO - Response Headers: {'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '634', 'Connection': 'keep-alive', 'Date': 'Wed, 16 Jul 2025 10:07:05 GMT', 'Twilio-Concurrent-Requests': '1', 'Twilio-Request-Id': 'RQbce00e82ec4b13e21c142c2fd367d700', 'Twilio-Request-Duration': '0.192', 'X-Home-Region': 'us1', 'X-API-Domain': 'verify.twilio.com', 'Strict-Transport-Security': 'max-age=31536000', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 f6c1b6e08df5498c25dad079557a4936.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': 'Upu2U_EOZqFj7oXo_zkA_KZ-rQbEWV2LnlyrtiVul5tSXA3c-z1dvQ==', 'X-Powered-By': 'AT-5000', 'X-Shenanigans': 'none', 'Vary': 'Origin'}
+2025-07-16 15:37:08,508 - INFO - Verification sent to 8799188207 via sms: VEd751682743e3f0fc8e9f82e94852480a
+2025-07-16 15:37:08,508 - INFO - -- BEGIN Twilio API Request --
+2025-07-16 15:37:08,508 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/Verifications
+2025-07-16 15:37:08,508 - INFO - Headers:
+2025-07-16 15:37:08,508 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-07-16 15:37:08,508 - INFO - Accept : application/json
+2025-07-16 15:37:08,508 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-07-16 15:37:08,508 - INFO - X-Twilio-Client : python-9.5.2
+2025-07-16 15:37:08,508 - INFO - Accept-Charset : utf-8
+2025-07-16 15:37:08,508 - INFO - -- END Twilio API Request --
+2025-07-16 15:37:09,339 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/Verifications HTTP/1.1" 400 127
+2025-07-16 15:37:09,339 - INFO - Response Status Code: 400
+2025-07-16 15:37:09,339 - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '127', 'Connection': 'keep-alive', 'Date': 'Wed, 16 Jul 2025 10:07:06 GMT', 'X-Twilio-Error-Code': '60223', 'Twilio-Concurrent-Requests': '1', 'Twilio-Request-Id': 'RQe661e10dded09632fc3822affdef2acc', 'Twilio-Request-Duration': '0.028', 'X-Home-Region': 'us1', 'X-API-Domain': 'verify.twilio.com', 'Strict-Transport-Security': 'max-age=31536000', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 f6c1b6e08df5498c25dad079557a4936.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': 'w48wivKvC4-nXEKkcKEuHCwxDlkDJhfPXspUHkgiYpk9dv91a5u-9A==', 'X-Powered-By': 'AT-5000', 'X-Shenanigans': 'none', 'Vary': 'Origin'}
+2025-07-16 15:37:09,339 - ERROR - Twilio error sending OTP to quizzicalbassi1@freethecookies.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-07-16 15:37:09,339 - WARNING - Failed to send email OTP to quizzicalbassi1@freethecookies.com: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Services/VA695486c822347a776618117df64e6594/Verifications[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Delivery channel disabled: EMAIL[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/60223[0m
+
+
+2025-07-16 15:37:09,339 - INFO - Login pending OTP: phone=8799188207, sent to [{'identifier': '8799188207', 'type': 'sms'}]
+2025-07-16 15:37:09,346 - INFO - 200 POST /api/login (127.0.0.1) 1794.02ms
+2025-07-16 15:37:25,716 - INFO - 200 OPTIONS /api/verify_code (127.0.0.1) 0.00ms
+2025-07-16 15:37:25,722 - INFO - -- BEGIN Twilio API Request --
+2025-07-16 15:37:25,722 - INFO - POST Request: https://verify.twilio.com/v2/Services/VA695486c822347a776618117df64e6594/VerificationCheck
+2025-07-16 15:37:25,724 - INFO - Headers:
+2025-07-16 15:37:25,724 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-07-16 15:37:25,724 - INFO - Accept : application/json
+2025-07-16 15:37:25,724 - INFO - User-Agent : twilio-python/9.5.2 (Windows AMD64) Python/3.11.9
+2025-07-16 15:37:25,724 - INFO - X-Twilio-Client : python-9.5.2
+2025-07-16 15:37:25,724 - INFO - Accept-Charset : utf-8
+2025-07-16 15:37:25,725 - INFO - -- END Twilio API Request --
+2025-07-16 15:37:26,331 - DEBUG - https://verify.twilio.com:443 "POST /v2/Services/VA695486c822347a776618117df64e6594/VerificationCheck HTTP/1.1" 200 340
+2025-07-16 15:37:26,331 - INFO - Response Status Code: 200
+2025-07-16 15:37:26,331 - INFO - Response Headers: {'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '340', 'Connection': 'keep-alive', 'Date': 'Wed, 16 Jul 2025 10:07:23 GMT', 'Twilio-Concurrent-Requests': '1', 'Twilio-Request-Id': 'RQe5c2d49859138f62f189ab4b720d8455', 'Twilio-Request-Duration': '0.046', 'X-Home-Region': 'us1', 'X-API-Domain': 'verify.twilio.com', 'Strict-Transport-Security': 'max-age=31536000', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 f6c1b6e08df5498c25dad079557a4936.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P10', 'X-Amz-Cf-Id': 'HnaQVCjKTunGzYCeQi2jml77nP_OJKSyrzbTcIrDwwlJp33nfQgUtg==', 'X-Powered-By': 'AT-5000', 'X-Shenanigans': 'none', 'Vary': 'Origin'}
+2025-07-16 15:37:26,333 - INFO - Verification check for 8799188207: approved
+2025-07-16 15:37:26,335 - INFO - phone verified for 8799188207
+2025-07-16 15:37:26,337 - INFO - 200 POST /api/verify_code (127.0.0.1) 614.94ms
+2025-07-16 15:47:38,675 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-07-16 15:47:38,679 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 7.64ms
+2025-07-16 15:47:38,684 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-07-16 15:47:38,684 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 2.87ms
+2025-07-16 19:51:26,644 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-07-16 19:51:26,644 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 16.11ms
+2025-07-16 19:58:14,048 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-07-16 19:58:14,048 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 2.01ms
+2025-07-16 19:58:14,052 - INFO - Profile fetched for email=quizzicalbassi1@freethecookies.com
+2025-07-16 19:58:14,052 - INFO - 200 GET /api/profile?identifier=quizzicalbassi1%40freethecookies.com (127.0.0.1) 4.11ms

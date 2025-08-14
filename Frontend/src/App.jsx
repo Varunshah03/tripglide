@@ -31,6 +31,11 @@ import CarCard from "./components/CarCard";
 import CabListing from "./components/CabListing";
 import IndividualHotelDeals from "./components/IndividualHotelDeals";
 import TermsAndConditions from "./components/TermsAndConditions";
+import SwiperPopularCarDeals from "./components/SwiperPopularCarDeals";
+import CountryFacts from "./components/CountryFacts.jsx"; 
+import RegionalSettings from "./components/RegionalSettings.jsx";
+import Help from "./components/Help.jsx";
+import PrivacyPolicy from "./components/PrivacyPolicy.jsx";
 
 const initialFlightData = [
   {
@@ -429,6 +434,11 @@ function App() {
           <Route path="/cab-booking-history" element={<CabBookingHistory />} />
           <Route path="/individual-hotel-deals/:hotel/:arrival" element={<IndividualHotelDeals/>}/>
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="/swiper-popular-car-deals" element={<SwiperPopularCarDeals />} />
+          <Route path="/country-facts" element={<CountryFacts />} />
+          <Route path="/regional-settings" element={<RegionalSettings />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       
       
